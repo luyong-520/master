@@ -1,0 +1,168 @@
+*{
+    margin:0px;
+    padding:0px ;
+    list-style:none;
+    text-decoration:none;
+    border:none;
+    outline:0;
+    font-family:'PingFangSC-Regular','Microsoft YaHei';
+}
+
+body{
+    min-height:768px;
+    background:url('../img/topflowerbg.png') 92% top no-repeat,
+    url('../img/huawen1.png') 0px 426px no-repeat,
+    url('../img/flowerbg.png') 92% 342px no-repeat,
+    url('../img/huawen2.png') right 547px no-repeat;
+    background-size:307px 199px,463px 130px,97px 112px,477px 130px;
+}
+#container{
+    width:1008px;
+    margin:auto;
+}
+#headers{
+    height:196px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+#btflower img{
+    width:22px;
+    height:19px;
+    position:relative;
+    left:146px;
+    top:72px;
+}
+#bagtitle span{
+    font-size:36px;
+    letter-spacing:0;
+    position:relative;
+    top:57px;
+}
+#bagtitle p{
+    font-family: Georgia;
+    font-size: 20px;
+    color: #41200A;
+    position:relative;
+    top:58px;
+}
+
+/* Navigation */
+#Navigation{
+    width:360px;
+    height:196px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.dropbtn{
+    width:33px;
+    height:85px;
+    border-top:2px solid #F1EEE3;
+    position: relative;
+    top:80px;
+}
+.dropbtn a{
+    color: #41200A;
+}
+.dropdownone{
+    font-size: 14px;
+    width:14px;
+    height:64px;
+    writing-mode: vertical-lr;
+    letter-spacing:1px;
+    position: relative;
+    top:9px;
+}
+.dropdowntwo{
+    font-size:12px;
+    width:6px;
+    height:64px;
+    writing-mode: vertical-lr;
+    position: relative;
+    top:9px;
+}
+#dropdown:hover .dropbtn{
+    border-top:2px solid #D18324;
+}
+#dropdown:hover .dropdownone{
+    color:#D18324;
+}
+.sjx{
+    position: absolute;
+    margin-top:70px;
+    margin-left:5px;
+    width:0px;                          
+    height:0px;
+    border-bottom:7px solid #DFDCD2;
+    border-left: 4px solid transparent;   
+    border-right: 4px solid transparent;
+    display:none;
+    cursor: pointer;
+}
+.dropdown-content{
+    position:relative;
+    top:77px;
+    right:8px;
+    height:88px;
+    background-color:#DFDCD2;
+    display:none;
+    cursor: pointer;
+}
+.dot{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background-color:#DFDCD2;
+    border:1px solid #DFDCD2;
+    position: relative;
+    bottom:4px;
+}
+.dcbtn{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.dcbtnone{
+    font-size:12px;
+    color: #41200A;
+    margin:0px auto;  
+    height: 140px;  
+    writing-mode: vertical-lr;
+    writing-mode: tb-lr;
+    letter-spacing:3px;
+    padding-top:15px;
+    line-height:17px;
+}
+.dcbtnone:hover{
+    color:#D18324;
+}
+.dcbtnone:hover .dot{
+    border:1px solid #D18324;
+}
+#dropdown:hover .sjx{
+    display:block;
+}
+#dropdown:hover .dropdown-content{
+    display:block;
+}
+
+
+/* footer */
+#footer{
+    height:125px;
+    border-top:1px solid #D0B696;
+}
+#footer p{
+    text-align:center;
+    font-size: 12px;
+    color: #41200A;
+    line-height: 24px;   
+}
+
+                                                                             
+

@@ -1,0 +1,123 @@
+
+        *{
+            margin:0px;
+            padding:0px;
+            list-style:none;
+            font-family:'PingFangSC-Regular','Microsoft YaHei';
+        }
+        html{
+            background-color:#F1EEE3;
+            height:100%;
+        }
+        a{
+            text-decoration:none;
+            color: #41200A;
+        }
+        body{
+              min-height:100%;
+              overflow-y:hidden;
+              background:url('img/flower.png') 0.5rem bottom no-repeat;
+              background-size:307px 199px;
+           }
+        .container{
+            width:1260px;
+            min-height:6.9rem;
+            margin:auto;
+            display:flex;
+        }
+        .nav{
+            position: absolute;
+        }
+        .nav a{
+            width:14px;
+            font-family: JLinXin;
+            font-size: 14px;
+            font-weight:bold;
+            color: #FFFFFF;
+            writing-mode: vertical-lr;
+        }
+        .navone{
+            position: relative;
+            left:16px;
+            bottom:15px;
+        }
+        .navone:hover{
+            color:#D18324;
+        }
+        .navtwo:hover{
+            color:#D18324;
+        }
+        .navtwo{
+            position: relative;
+            bottom:15px;
+        }
+        .anxiang img{
+            width:151px;
+            height:301px;
+            position:relative;
+            left:33px;
+            margin-top:2.5rem;
+        }
+        .homePage{
+            width:753px;
+            position:relative;
+            left:300px;
+            /* min-height:100%;
+            overflow-y:hidden; */
+            background:url('img/border2.png')left bottom no-repeat,
+            url('img/border3.png') 83px bottom no-repeat,
+            url('img/border3.png') 133px top no-repeat,
+            url('img/border3.png') 216px top no-repeat,
+            url('img/border2.png') 266px bottom no-repeat,
+            url('img/border2.png') 349px bottom no-repeat,
+            url('img/border3.png') 399px top no-repeat,
+            url('img/border3.png') 482px top no-repeat,
+            url('img/border2.png') 532px bottom no-repeat,
+            url('img/border2.png') 615px bottom no-repeat,
+            url('img/border3.png') 665px top no-repeat,
+            url('img/border3.png') 748px top no-repeat;
+            background-size:1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
+            1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
+            1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
+            1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
+            1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
+            1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem;
+        }
+        .homePage img{
+            width:82px;
+            height:3rem;
+            position:relative;
+            top:3.9rem;
+        }
+        .pageone{
+            width:50px;
+        }
+        .pageone li{
+            font-family: SourceHanSansCN-Medium;
+            letter-spacing:3px;
+            line-height: 22px;
+            writing-mode: vertical-lr;
+            writing-mode: vertical-rl;
+        }
+        .homePagetitle{
+            display: flex;
+            justify-content: space-between;
+            position:relative;
+            bottom:50px;
+        }
+        .floatLeft a{
+            font-size: 18px;
+        }
+        .floatLeft{
+            float:left;
+        }
+        .floatRight{
+            float:right;
+        }
+        .floatRight a{
+            font-size:14px;
+            font-family:'Georgia';
+        }
+        .pageone:hover a{
+            color:#D18324;
+        }
