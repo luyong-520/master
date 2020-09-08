@@ -13,9 +13,17 @@
             text-decoration:none;
             color: #41200A;
         }
+        .has-text-align-center{
+            text-align: center;
+        }
+        .aligncenter{
+            text-align: center;
+        }
+        .has-text-align-right{
+            text-align: right;
+        }
         body{
               min-height:100%;
-              overflow-y:hidden;
               background:url('img/flower.png') 0.5rem bottom no-repeat;
               background-size:307px 199px;
            }
@@ -27,30 +35,21 @@
         }
         .nav{
             position: absolute;
+            left: 0;
+            top:90px;
+            display: flex;
+            justify-content: space-between;
         }
-        .nav a{
-            width:14px;
+         .nav a{
+            display: block;
+            width:16px;
+            margin-left: 8px;
             font-family: JLinXin;
             font-size: 14px;
             font-weight:bold;
             color: #FFFFFF;
             writing-mode: vertical-lr;
-        }
-        .navone{
-            position: relative;
-            left:16px;
-            bottom:15px;
-        }
-        .navone:hover{
-            color:#D18324;
-        }
-        .navtwo:hover{
-            color:#D18324;
-        }
-        .navtwo{
-            position: relative;
-            bottom:15px;
-        }
+        } 
         .anxiang img{
             width:151px;
             height:301px;
@@ -60,10 +59,7 @@
         }
         .homePage{
             width:753px;
-            position:relative;
-            left:300px;
-            /* min-height:100%;
-            overflow-y:hidden; */
+            margin-left:300px;
             background:url('img/border2.png')left bottom no-repeat,
             url('img/border3.png') 83px bottom no-repeat,
             url('img/border3.png') 133px top no-repeat,
@@ -83,21 +79,49 @@
             1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
             1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem;
         }
-        .homePage img{
-            width:82px;
-            height:3rem;
-            position:relative;
-            top:3.9rem;
-        }
+       
         .pageone{
             width:50px;
+            position: relative;
+            top: 350px;
+            height: 450px;
+            left: 0;
         }
-        .pageone li{
+        .first_pic{
+            width:83px;
+            height:400px;
+            position: absolute;
+            left: -20px;
+            top: 120px;
+        }
+        .sec_pic{
+            width:83px;
+            height:300px;
+            position: absolute;
+            left: -20px;
+            top: -350px;
+        }
+        .first_pic img{
+            width:83px;
+            height:400px;
+        }
+        .sec_pic img{
+            width:83px;
+            height:300px;
+            -moz-transform:rotate(180deg); 
+            -webkit-transform:rotate(180deg);
+            transform:rotate(180deg);
+        }
+        .pageone li {
             font-family: SourceHanSansCN-Medium;
             letter-spacing:3px;
             line-height: 22px;
-            writing-mode: vertical-lr;
+            display: inline-block;
+            width: 23px;
             writing-mode: vertical-rl;
+            -webkit-writing-mode: vertical-rl;
+            -moz-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
         }
         .homePagetitle{
             display: flex;
@@ -118,6 +142,9 @@
             font-size:14px;
             font-family:'Georgia';
         }
-        .pageone:hover a{
-            color:#D18324;
+        .dbl{
+            display:block;
+        }
+        .dno{
+            display:none;
         }

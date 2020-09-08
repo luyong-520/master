@@ -42,7 +42,7 @@
                 
                <ul class="ZenMusic">
                <?php foreach ($value['list'] as $id => $item) {?>
-                 <li><a href="<?php echo 'ZenMusic.php?id='.$item['ID']; ?>"><?php echo $item['post_title']; ?> …………………………...<span></span><a></li>
+                 <li><a href="<?php echo 'ZenMusic.php?id='.$item['ID']; ?>"> <span><?php echo $item['post_title']; ?>………………………………………</span><a></li>
                  <?php } ?>
                </ul>
                

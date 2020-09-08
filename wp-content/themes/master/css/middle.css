@@ -1,5 +1,6 @@
 .testAlign{
     text-align: center;
+    margin-top: 19px;
 }
 h6{
     font-size:16px;
@@ -305,14 +306,17 @@ html{
 }
 
 /* 9 */
-#lecturetwo{
+.lecturetwo{
+    margin-top: 20px;
     color: #41200A;
     line-height: 24px;
     background-color:#F1EEE3;
 }
-#lecturetwo p{
+
+.lecturetwo p{
     font-size:14px;
-    line-height: 36px;
+    line-height: 24px;
+    color: #41200A;
 }
 .gsls{
     margin:19px auto;
@@ -321,6 +325,10 @@ html{
 .hfour{
     font-size:14px;
     font-weight:900px;
+}
+.createtime{
+    margin-top: 8px ;
+    font-size:12px ;
 }
 .textIndent{
     text-indent:32px;
@@ -407,6 +415,7 @@ html{
     font-size:14px;
     line-height:40px;
     height:40px;
+    padding-left: 5px;
     font-weight: bold;
 }
 .ZenMusic{
@@ -419,6 +428,14 @@ html{
     font-size:12px;
     font-weight:500;
     width:220px;
+    
+}
+.ZenMusic li span{
+    display: inline-block;
+    width: 180px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 /* one five */
 .songstwo{

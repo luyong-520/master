@@ -23,11 +23,7 @@
         <div class="songstwo">
             <h4><?php echo $rows[0]['post_title'] ?></h4>
             <p><?php echo $rows[0]['post_excerpt'] ?></p>
-            <!-- 音频 -->
-          <!-- <audio controls class="gsls" style="margin:19px auto;">
-            <source src="./img/gsls.mp3" type="audio/mpeg">
-          </audio> -->
-      <!-- 音频结束         -->
+        
       <div class="songstwolyric" style="margin-top:40px;">
         <p><?php echo $rows[0]['post_content'] ?></p>
       </div>

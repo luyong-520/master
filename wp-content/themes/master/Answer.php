@@ -26,6 +26,7 @@
     <title>Document</title>
     <link href="./css/public.css" rel="stylesheet" />
     <link href="./css/middle.css" rel="stylesheet" />
+    <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" />
 </head>
 <body>
     <div id="container">
@@ -34,7 +35,13 @@
       <!-- 中间的表 -->
       <main id="lecturetwo">
         <h6 class="testAlign" style="margin-top:19px;"><?php echo $rows[1]['post_title'] ?></h6>
-        <p class="testAlign">创作于<?php echo $rows[1]['post_excerpt'] ?></p>
+        <p class="testAlign createtime" >创作于<?php
+         if(strpos($rows[0]['post_excerpt'], '&')){
+            echo substr($rows[0]['post_excerpt'],strripos($rows[0]['post_excerpt'],"&")+1 );
+         }else {
+            echo "";
+         }
+        ?></p>
         <div class="audio-wrapper">
           <!-- 音频 -->
           <!-- <audio controls class="gsls">
@@ -63,8 +70,8 @@
     <script>
       window.onload = function () {
           let id
-         if(window.location.search.indexOf('&&')>-1){
-            window.location.search.split('&&').forEach(val => {
+         if(window.location.search.indexOf('&')>-1){
+            window.location.search.split('&').forEach(val => {
               if(val.indexOf('page')>-1){
                 id = Number(val.split('=')[1])
               };
@@ -78,8 +85,8 @@
       } 
       function go(id) {
         let title
-         if(window.location.search.indexOf('&&')>-1){
-            window.location.search.split('&&').forEach(val => {
+         if(window.location.search.indexOf('&')>-1){
+            window.location.search.split('&').forEach(val => {
             
               if(val.indexOf('title')>-1){
                 title = val.split('=')[1]
@@ -88,7 +95,7 @@
          }else{
              title = window.location.search.split('=')[1]
          }    
-        window.location.href=`Answer.php?title=${title}&&page=${Number(id)+1}`
+        window.location.href=`Answer.php?title=${title}&page=${Number(id)+1}`
       }
      
   </script>

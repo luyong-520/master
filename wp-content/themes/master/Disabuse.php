@@ -16,7 +16,7 @@
    FROM wp_posts
    WHERE ID IN
    (SELECT object_id
-   FROM wp_term_relationships WHERE term_taxonomy_id =3  ) GROUP BY `post_title` ORDER BY ID ASC LIMIT $currentPage,$pageSize";       
+   FROM wp_term_relationships WHERE term_taxonomy_id =7  ) GROUP BY `post_title` ORDER BY ID ASC LIMIT $currentPage,$pageSize";       
    $rows = $wpdb->get_results($sql,ARRAY_A);
    $num = $wpdb->get_var($countsql); 
    $count = ceil($num/$pageSize);
@@ -40,7 +40,7 @@
           <span style="margin-top:24px;"></span>
           <h1><?php echo $value['post_title']; ?></h1>
           <p><?php echo substr($value['post_excerpt'],0,strripos($value['post_excerpt'],"&")); ?></p>
-          <a href="<?php echo 'Answer.php?title='.$value['post_title']; ?>">阅读全文</a>
+          <a href="<?php echo 'DisabusedeDatile.php?title='.$value['post_title']; ?>">阅读全文</a>
         </div>
         <?php } ?>
       </main>

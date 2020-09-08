@@ -42,6 +42,7 @@
     <script>
       function pre(params) {
         let page = 0
+        let title 
           window.location.search.split('&').forEach(val => {
               if(val.indexOf('page')>-1){
                 page = val.split('=')[1]
@@ -49,18 +50,20 @@
               if(val.indexOf('count')>-1){
                 count = Number(val.split('=')[1])
               };
+              if(val.indexOf('title')>-1){
+                title = val.split('=')[1]
+              };
           });
-          console.log(page,count)
            if(page <= 0){
-            
            }else{
             page--
-            window.location.href=`WorksCatalogone.php?page=${page}&&count=${count}`
+            window.location.href=`WorksCatalogone.php?page=${page}&&count=${count}&title=${title}`
            };  
       }
       function next(params) {
         let page = 0
         let count = 0
+        let title 
           window.location.search.split('&').forEach(val => {
               if(val.indexOf('page')>-1){
                 page = val.split('=')[1]
@@ -68,13 +71,15 @@
               if(val.indexOf('count')>-1){
                 count = Number(val.split('=')[1])
               };
+              if(val.indexOf('title')>-1){
+                title = val.split('=')[1]
+              };
           });
-          console.log(count)
            if(page >= count-1){
             document.getElementById('next').innerHTML='最后一章'
            }else{
             page++
-            window.location.href=`WorksCatalogone.php?page=${page}&&count=${count}`
+            window.location.href=`WorksCatalogone.php?page=${page}&&count=${count}&title=${title}`
            };  
       }
   </script>

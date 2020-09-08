@@ -10,20 +10,20 @@
     $word = '师父法相';
     $laststr = 'Master’s Picture';
    }
-   if($last=='Works.php'||$last=='WorksCatalogone.php'||$last=='Answer.php'){
+   if($last=='Works.php'||$last=='WorksCatalogone.php'){
     $word = '师父著作';
     $laststr = 'Works';
    }
-   if($last=='Lecture.php'){
-    $word = '法音讲词';
+   if($last=='Lecture.php'||$last=='Answer.php'){
+    $word = '师父讲词';
     $laststr = 'Lecture';
    }
-   if($last=='BookNotes.php'){
+   if($last=='Disabuse.php'||$last=='DisabusedeDatile.php'){
+    $word = '师父解惑';
+    $laststr = 'Lecture';
+   }
+   if($last=='BookNotes.php'||$last=='BookNotesone.php'){
     $word = '耕耘书笺';
-    $laststr = 'Lecture';
-   }
-   if($last=='BookNotesone.php'){
-    $word = '师父书笺';
     $laststr = 'Lecture';
    }
    if($last=='Videos.php'){
@@ -51,8 +51,8 @@
 
         <div id="dropdown">
         <div class="dropbtn">
-          <a href="http://localhost:8001/" class="dropdownone">网站首页</a>
-          <a href="http://localhost:8001/" class="dropdowntwo">Home</a>
+          <a href="http://gengyun.yc384.com/" class="dropdownone">网站首页</a>
+          <a href="http://gengyun.yc384.com/" class="dropdowntwo">Home</a>
         </div>
         </div>
         
@@ -88,7 +88,7 @@
         <div class="dropdown-content" style="width:72px;">
           <div class="dcbtn">
             <a href="./Lecture.php" class="dcbtnone"><button class="dot"></button>师父讲词</a>
-            <a href="./Answer.php" class="dcbtnone"><button class="dot"></button>师父解惑</a>
+            <a href="./Disabuse.php" class="dcbtnone"><button class="dot"></button>师父解惑</a>
             <a href="./BookNotes.php" class="dcbtnone"><button class="dot"></button>耕耘书笺</a>
           </div>
         </div>
