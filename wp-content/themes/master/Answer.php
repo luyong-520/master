@@ -34,7 +34,7 @@
 
       <!-- 中间的表 -->
       <main id="lecturetwo">
-        <h6 class="testAlign" style="margin-top:19px;"><?php echo $rows[1]['post_title'] ?></h6>
+        <h6 class="testAlign" style="margin-top:19px;"><?php echo $rows[0]['post_title'] ?></h6>
         <p class="testAlign createtime" >创作于<?php
          if(strpos($rows[0]['post_excerpt'], '&')){
             echo substr($rows[0]['post_excerpt'],strripos($rows[0]['post_excerpt'],"&")+1 );

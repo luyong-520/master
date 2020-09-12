@@ -8,7 +8,7 @@
     <link href="./css/middle.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="container" style="min-height:768px;">
+    <div id="container" style="min-height:687px;">
      <?php include("header.php"); ?>
       
       <!-- main -->

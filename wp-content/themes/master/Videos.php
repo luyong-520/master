@@ -22,12 +22,14 @@
         <div id="videosone">
          <?php foreach ($rows as $key => $value) { ?>
            <div class="videoones">
-            <a href="javascript:void(0)"><video width="492" height="369" controls>
+            <div style="width:492px;height:369px">
+            <video width="492" height="369" poster='./img/shipin.jpg'  controls>
               <source src="<?php echo $value['guid'] ?>" type="video/mp4">
-            </video></a>
+            </video>
+            </div>
             <p style="color:#D18324;margin-top:20px;"><?php echo $value['post_excerpt'] ?></p>
             <p style="margin-top:5px;">讲于：<?php echo substr($value['post_content'],0,strrpos($value['post_content'],"&"));  ?></p>
-            <p>收录于：<?php echo substr($value['post_content'],strripos($value['post_content'],"&")+1);  ?></p></p>
+            <p>收录于：<?php echo substr($value['post_content'],strripos($value['post_content'],"&")+1);  ?></p>
            </div>
           <?php } ?>
         </div>

@@ -23,12 +23,9 @@
         <div class="songstwo">
             <h4><?php echo $rows[0]['post_title'] ?></h4>
             <p><?php echo $rows[0]['post_excerpt'] ?></p>
-        
-      <div class="songstwolyric" style="margin-top:40px;">
-        <p><?php echo $rows[0]['post_content'] ?></p>
-      </div>
-
-
+           <div class="songstwolyric" style="margin-top:40px;">
+            <p><?php echo $rows[0]['post_content'] ?></p>
+           </div>
         </div>  
       </main>
     </div>

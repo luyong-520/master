@@ -1,0 +1,116 @@
+*{
+    margin:0px;
+    padding:0px ;
+    list-style:none;
+    text-decoration:none;
+    border:none;
+    outline:0;
+    font-family:'SourceHanSansCN-Medium','Microsoft YaHei';
+    color: #41200A;
+}
+html{
+    background-color:#F1EEE3;
+    font-size: 13.3333333333333333333333333333333333333vw;
+}
+body{
+    min-height:667px;
+    background:url('img/topflowerbg.png') 92% top no-repeat,
+    url('img/lianhua.png') 26px bottom no-repeat,
+    url('img/border3.png') left 444.5px no-repeat;
+    background-size:153.5px 99.5px,48px 56px,1px 100%;
+
+}
+.anxiang img{
+    margin:0px auto;
+    padding-top:2.32rem;
+    display:block;
+    width:1.5rem;
+    height:3rem;
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+}
+.menu{
+    width:65%;
+    height:1.48rem;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration:none;
+    color: #41200A;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+.page_item{
+    width:.8rem;
+    height: 1.48rem;
+    display: flex;
+    justify-content:flex-start;
+}
+.page_item a{
+    writing-mode: vertical-lr;
+    writing-mode: tb-lr; 
+    display: block; 
+    height: 1.48rem;
+}
+.menu-one{
+    margin-left:12%;
+    margin-top:0.8rem;
+}
+.menu-one li{
+	margin-top: 0.4rem;
+}
+.menu-two{
+	height: 1.5rem;
+    margin-left:26%;
+    margin-top:0.22rem;
+}
+.sizeone{
+    font-size: .28rem;
+    letter-spacing:.03rem;
+    line-height: .32rem;
+}
+.sizetwo{
+    height:.68rem;
+    font-size:.18rem;
+    letter-spacing:1px;
+}
+
+.borders{
+    opacity: 0.4;
+    border: 1px solid #D0B696;
+}
+.above {
+    width:65%;
+    margin-left:12%;
+    margin-top:0.32rem;
+}
+.below {
+    width:65%;
+    margin-left:26%;
+}
+.below img{
+    width:0.12rem;
+    height:1.12rem;
+}
+.above img{
+    width:.12rem;
+    height:1.12rem;
+}
+.above-left{
+    margin-left:0.12rem;
+}
+.above-right{
+    margin-right:.44rem;
+}
+/*wordpress 文章的样式*/
+ .has-text-align-center{
+    text-align: center;
+ }
+  .aligncenter{
+    text-align: center;
+}
+  .has-text-align-right{
+    text-align: right;
+}

@@ -38,7 +38,7 @@
             </div>
             
             <!-- paging    -->
-            <div id="paging" style="margin:42px auto;">
+            <div id="paging" style="margin:0 auto;">
                 <button class="arrowleft"><img src="./img/arrowleft.png"></button>
                 <!-- <a href="#" class="active"><button class="pagingred"></button>01</a> -->
                 <?php for($i=0;$i<$count;$i++) { ?>
@@ -69,7 +69,5 @@
            viewer.view(0);
        }
 		});
-        console.log(viewer)
-        // var viewer2 = new Viewer(document.getElementById('sucaihuo2'));
 </script>
 </html>

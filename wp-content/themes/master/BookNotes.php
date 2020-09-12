@@ -3,7 +3,8 @@
    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-config.php' );
    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-includes/wp-db.php' );
    $page = isset($_GET['page']) ? (int)$_GET['page']: 1;
-   $currentPage = ($page-1)*2;
+   $pageSize = 5;
+   $currentPage = ($page-1)*$pageSize;
    $countsql = "SELECT COUNT(DISTINCT post_title) unm
    FROM wp_posts
    WHERE ID IN
@@ -13,10 +14,10 @@
    FROM wp_posts
    WHERE ID IN
    (SELECT object_id
-   FROM wp_term_relationships WHERE term_taxonomy_id =2  ) GROUP BY `post_title` ORDER BY ID ASC LIMIT $currentPage,2";       
+   FROM wp_term_relationships WHERE term_taxonomy_id =2  ) GROUP BY `post_title` ORDER BY ID ASC LIMIT $currentPage,$pageSize";       
    $rows = $wpdb->get_results($sql,ARRAY_A);
    $num = $wpdb->get_var($countsql);  
-   $count = ceil($num/2);
+   $count = ceil($num/$pageSize);
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

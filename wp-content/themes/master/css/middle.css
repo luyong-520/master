@@ -18,7 +18,11 @@ html{
     width:320px;
     height:461.5px;
     position: absolute;
-
+    
+}
+video{
+    margin: 0;
+    padding: 0;
 }
 .mastertitle{
     margin-top:50px;
@@ -315,7 +319,7 @@ html{
 
 .lecturetwo p{
     font-size:14px;
-    line-height: 24px;
+    line-height: 28px;
     color: #41200A;
 }
 .gsls{

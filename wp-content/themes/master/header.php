@@ -20,11 +20,11 @@
    }
    if($last=='Disabuse.php'||$last=='DisabusedeDatile.php'){
     $word = '师父解惑';
-    $laststr = 'Lecture';
+    $laststr = 'Dispel Doubt';
    }
    if($last=='BookNotes.php'||$last=='BookNotesone.php'){
     $word = '耕耘书笺';
-    $laststr = 'Lecture';
+    $laststr = 'Writing Notes';
    }
    if($last=='Videos.php'){
     $word = '讲法视频';
@@ -35,8 +35,8 @@
     $laststr = 'Songs';
    }
    if($last=='Communication.php'){
-    $word = '在线交流';
-    $laststr = 'ContactUs';
+    $word = '联系我们';
+    $laststr = 'Contact Us';
    }
 ?>
    <header id="headers">
@@ -65,7 +65,7 @@
         <button class="sjx"></button>
         <div class="dropdown-content" style="width:50px;">
           <div class="dcbtn">
-            <a href="./AboutMaster.php" class="dcbtnone"><button class="dot"></button>耕耘师父</a>
+            <a href="./AboutMaster.php" class="dcbtnone"><button class="dot"></button>师父简介</a>
             <a href="./MastersPicture.php" class="dcbtnone"><button class="dot"></button>师父法相</a>
           </div>
         </div>
@@ -97,21 +97,21 @@
       <div id="dropdown">
         <div class="dropbtn">
           <a href="./Videos.php" class="dropdownone">讲法视频</a>
-          <a href="./Videos.php" class="dropdowntwo">Video</a>
+          <a href="./Videos.php" class="dropdowntwo">Videos</a>
         </div>
       </div>
 
       <div id="dropdown">
         <div class="dropbtn">
           <a href="./Songs.php" class="dropdownone">禅曲欣赏</a>
-          <a href="./Songs.php" class="dropdowntwo">Song</a>
+          <a href="./Songs.php" class="dropdowntwo">Songs</a>
         </div>
       </div>
 
       <div id="dropdown">
         <div class="dropbtn">
           <a href="Communication.php" class="dropdownone">联系我们</a>
-          <a href="Communication.php" class="dropdowntwo">ContactUs</a>
+          <a href="Communication.php" class="dropdowntwo">Contact Us</a>
         </div>
       </div>
 

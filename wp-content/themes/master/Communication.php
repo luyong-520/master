@@ -25,31 +25,71 @@
                   <img src="img/dingwei.png" alt="" width="15px;" height="18px;" style="margin-left: 2px; margin-top: 22px;">xxx市xxx区xxx大道xxx街xxx号
 <br>
           </div>
-        <form action="" ></form>
           <div id="div2">
             <ul>
               <li>
                   <label for="name" style="margin-right: 52px;">姓名</label>
-                  <input type="text" id="name" name="name" placeholder="" required="required" />
+                  <input type="text" id="name" name="name"  required="required" />
                 </li>
                 <li >
                   <label for="phone" style="margin-right: 24px;">联系电话</label>
-                  <input type="phone" id="phone" name="phone" placeholder="" required="required" />
+                  <input type="phone" id="phone" name="phone"  required="required" />
                   </li>
                   <li style="margin-top: 20px;">
                   <label for="message" style="margin-right: 24px; margin-top: 20px;">留言内容</label>
-                  <textarea cols="45" rows="7" id="message" name="message" required="required" placeholder=""></textarea>
+                  <textarea cols="45" rows="7" id="message" name="message" ></textarea>
                     </li>
                     <li>
-                  <input type="submit" name="submit" value="提交" id="submit"/>
+                  <button   onclick="checkForm()"  id="submit">提交</button> 
                     </li>
                 </ul>
                 </div>
-      </form>
       </main>
     </div>
 
      <!-- 底部 -->
      <?php include("footer.php"); ?>
 </body>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/layer.js"></script>
+<script>
+function checkForm(){
+    var name = document.getElementById('name').value;
+    var phone = document.getElementById('phone').value;
+    var message = document.getElementById('message').value;
+    let flag = false;
+    var reg = /^1[3|4|5|7|8]\d{9}$/;
+    if(name ){
+      if(reg.test(phone)){
+        flag=true
+      }else{
+        flag=false
+         layer.open({
+                content: '手机号码填写有误，请重新填写',
+                });
+        // alert('手机号码填写有误，请重新填写') 
+      }
+    }else{
+        flag=false
+        layer.open({
+                content: '姓名不能为空，请重新填写',
+                });
+        // alert('姓名不能为空，请重新填写')
+    } 
+    if(flag){
+        $.get(`getform.php?name=${name}&phone=${phone}&message=${message}`,function (result) {
+         var res = JSON.parse (result) 
+         if(res.code=='200'){
+            layer.msg('提交成功');
+            document.getElementById('name').value=''
+            document.getElementById('phone').value=''
+            document.getElementById('message').value=''
+         }else{
+            layer.msg('提交失败'); 
+         }
+        })
+       
+    }
+}
+</script>
 </html>

@@ -50,8 +50,8 @@
          <?php } ?>
           
     </main>
-
+     </div>
      <!-- 底部 -->
-     <?php get_footer();?>
+     <?php include("footer.php");;?>
 </body>
 </html>

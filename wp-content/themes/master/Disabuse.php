@@ -10,7 +10,7 @@
    FROM wp_posts
    WHERE ID IN
    (SELECT object_id
-   FROM wp_term_relationships WHERE term_taxonomy_id =3  )";
+   FROM wp_term_relationships WHERE term_taxonomy_id =7  )";
 //    查询结果
    $sql = "SELECT post_content,ID,post_title,post_excerpt
    FROM wp_posts

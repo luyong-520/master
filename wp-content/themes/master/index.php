@@ -13,7 +13,6 @@
    <div class="anxiang">
    <img src="<?php bloginfo('template_directory'); ?>/img/anxiang.png">
    </div>
-
    <div class="homePage">
     
     <div class="homePagetitle">
@@ -49,7 +48,7 @@
         </ul>
         <ul class="pageone">
             <li class="floatLeft"><a href="<?php bloginfo('template_directory'); ?>/Videos.php">讲法视频</a></li>
-            <li class="floatRight"><a href="<?php bloginfo('template_directory'); ?>/Videos.php">Video</a></li>
+            <li class="floatRight"><a href="<?php bloginfo('template_directory'); ?>/Videos.php">Videos</a></li>
             <div class="sec_pic dno">
              <img style="margin-left:4px;" src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
             </div>
@@ -62,7 +61,7 @@
             </div>
         </ul>
         <ul class="pageone" style="margin-right:22px;">
-            <li class="floatLeft"><a href="<?php bloginfo('template_directory'); ?>/Communication.php">在线交流</a></li>
+            <li class="floatLeft"><a href="<?php bloginfo('template_directory'); ?>/Communication.php">联系我们</a></li>
             <li class="floatRight"><a href="<?php bloginfo('template_directory'); ?>/Communication.php">ContactUs</a></li>
             <div class="sec_pic dno">
              <img style="margin-left:5px;" src="<?php bloginfo('template_directory'); ?>/img/navbg.png">

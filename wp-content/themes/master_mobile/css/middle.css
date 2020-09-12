@@ -1,0 +1,344 @@
+/* 2 */
+html{
+	font-size: 13.333333333333333333333333333vw;
+}
+.teacherportrait{
+    width:100%;
+    height:100%;
+}
+.teacher{
+    font-size:.6rem;
+    line-height: .6rem;
+    font-weight:500;
+    padding-top:.5rem;
+}
+.teacherthree{
+    margin:auto;
+}
+.masterintroduce{
+    margin-top:.33rem;
+}
+.masterintroduce p{
+    font-size:.32rem;
+    line-height:.58rem;
+}
+.marginTopFive{
+    margin-top:.58rem;
+}
+
+/* 3 */
+.teacherphoto{
+	width: 100%;
+	height: 4.59rem;
+}
+.teacherphoto img{
+    width:100%;
+    height:3.48rem;
+}
+.fontSizeThree p{
+    font-size:.32rem;
+    line-height:.32rem;
+}
+.textAlign{
+    text-align:center;
+}
+/* 分页 */
+/* paging */
+.paging{
+    text-align:center;
+    margin-top:-0.5rem ;
+}
+.paging a{
+    font-size:.24rem;
+    margin:.15rem;
+    position:relative;
+}
+.arrowleft{
+    border:none;
+    background: none; 
+}
+.arrowleft img{
+    width:.26rem;
+    height:.14rem;
+    line-height:0.18rem;
+}
+.paging .active .pagingred {
+    background-color:#D18324;
+}
+.pagingred{
+    width:.05rem;
+    height:.05rem;
+    background-color:#F1EEE3;
+    border-radius:50%;
+    position: absolute;
+    top: 0;
+    left: .2rem;
+}
+.paging a:active .pagingred{
+    background-color:#D18324;
+} 
+
+/* 4 */
+.weitu{
+    position: absolute;
+    top:9.71rem;
+    left:.27rem;
+    width:.2rem;
+    height:.14rem;
+}
+.displayBlock{
+    display:block;
+}
+.lecturecontent{
+	margin-bottom: .6rem;
+}
+.lecturecontent span{
+    width:.7rem;
+    height:.05rem;
+    background-color:#41200A;
+}
+.testAlign{
+	text-align: center;
+}
+.lecturecontent b{
+    font-size: .36rem;
+    line-height: .48rem;
+    margin-top:.28rem;
+}
+.lecturecontent p{
+    font-size: .28rem;
+    line-height: .48rem;
+    margin-top:.2rem;
+}
+.lecturecontent a{
+    font-size: .28rem;
+    color: #D18324;
+    line-height: .28rem;
+    margin-top:.2rem;
+}
+.marginTopEight{
+    margin-top:.8rem;
+}
+/* 6 */
+.workstwo p{
+    font-size: .36rem;
+    font-weight:bold;
+    text-align:center;
+    line-height: .24rem;
+}
+.workssurface{
+    border:1px solid #E3D7C4;
+    margin-top:.3rem;
+    background: #F1EEE3;
+}
+.surfaceone{
+    font-size:.28rem;
+    line-height:.3rem; 
+    font-weight:bold;
+    padding-left:.3rem;
+}
+.tablecolor{
+    background-color:#E9E6DC;
+}
+.surfacetwo{
+    padding-left:.3rem;
+    font-size:.28rem;
+    line-height:.6rem;
+}
+.paddingTen{
+    padding-bottom:.19rem;
+}
+.paddingNine{
+    padding-top:0.19rem;
+}
+/* 7 */
+.workstwotitle{
+    font-size: .36rem;
+    text-align: center;
+    line-height: .48rem;
+    font-weight:bold;
+}
+.worksuAthor{
+    font-size: .26rem;
+    line-height: .26rem;
+    margin-top:.19rem;
+}
+.workstwoarticle{
+    background-color: #F1EEE3;
+    margin-top:.31rem;
+}
+.workstwoarticle b{
+    font-size: .32rem;
+    line-height: .58rem;
+}
+.workstwoarticle p{
+    font-size: .32rem;
+    line-height: .58rem;
+    margin-top:.64rem;
+    text-indent:.64rem;
+} 
+.workstwochapter{
+    margin-top:.3rem;
+}
+.workstwochapter a{
+    font-size: .28rem;
+    color: #D18324;
+    line-height: .48rem;
+}
+
+
+/* 9 */
+.gsls{
+    width:100%;
+    margin:auto;
+}
+.marginToptwo{
+    margin-top:.4rem;
+}
+.lecturetwo{
+    margin-top:.31rem;
+    font-size: .32rem;
+    line-height: .58rem;
+}
+.lecturetwo p{
+    margin-top:.58rem;
+}
+.marginTopTF{
+    margin-top:0.51rem;
+}
+/* 12 */
+.videos{
+    width:100%;
+    margin:auto;
+    margin-bottom: .8rem;
+}
+.marginTopFour{
+    margin-top:.8rem;
+}
+.videos span{
+    font-size:.32rem;
+    color: #D18324;
+    line-height:.58rem;
+    font-weight: bold;
+}
+.videos p{
+    font-size:.28rem;
+    line-height:.4rem;
+}
+
+
+/* 14 */
+.songs{
+    width:100%;
+    border:1px solid #E3D7C4;
+    margin-top:.3rem;
+}
+.song{
+    width:90%;
+    margin:auto;
+}
+.hiddens{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.song b{
+    margin-top:.19rem;
+    font-size:.28rem;
+    line-height:.6rem;
+}
+.music a{
+    font-size:.26rem;
+    line-height:.48rem;
+    margin:auto;
+}
+.music span{
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+}
+.padding-bottom{
+    padding-bottom:.3rem;
+}
+/* 15 */
+.zenmusic{
+    margin-top:.31rem;
+}
+.zenmusic p{
+    font-size:.32rem;
+    text-align: center;
+    line-height:.58rem;
+}
+
+/* 16 */
+.contactus{
+    width:6.2rem;
+    margin:auto;
+}
+.contactus img{
+    position: relative;
+    top:.14rem;
+}
+.tel{
+    width: .36rem;
+    height:.38rem;
+}
+.contact span{
+    font-size: .28rem;
+    line-height: .64rem;
+    margin-left:.24rem;
+}
+.mailbox{
+    width:.36rem;
+    height:.28rem;
+}
+.qq{
+    width:.36rem;
+    height:0.373rem;
+}
+.location{
+    width:.36rem;
+    height:0.438rem;
+}
+
+.form{
+    font-size: .28rem;
+    line-height: .36rem;
+    margin-top:.5rem;
+}
+.fname{
+    margin-top:.2rem;
+    height:.68rem;
+}
+.inputs{
+    text-indent:.2rem;
+    width:100%;
+    background: #F1EEE3;
+    border: 1px solid #D0B696;
+    border-radius: .16rem;
+    border-radius: .16rem;
+}
+.main{
+	margin-top: -.8rem;
+}
+.textareas{
+    text-indent:.2rem;
+    background: #F1EEE3;
+    border: 1px solid #D0B696;
+    border-radius: .16rem;
+    border-radius: .16rem;
+    height:2rem;
+    margin-top:.2rem;
+    resize: none;
+}
+.submit{
+	width: 1.6rem;
+	height: 0.6rem;
+	margin-top: .2rem;
+	line-height: .6rem;
+	text-align: center;
+    font-size: 0.28rem;
+    color: #FFFFFF;
+    background: #D18324;
+    
+}

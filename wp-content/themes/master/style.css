@@ -61,17 +61,17 @@
             width:753px;
             margin-left:300px;
             background:url('img/border2.png')left bottom no-repeat,
-            url('img/border3.png') 83px bottom no-repeat,
-            url('img/border3.png') 133px top no-repeat,
-            url('img/border3.png') 216px top no-repeat,
+            url('img/border2.png') 83px bottom no-repeat,
+            url('img/border2.png') 133px top no-repeat,
+            url('img/border2.png') 216px top no-repeat,
             url('img/border2.png') 266px bottom no-repeat,
             url('img/border2.png') 349px bottom no-repeat,
-            url('img/border3.png') 399px top no-repeat,
-            url('img/border3.png') 482px top no-repeat,
+            url('img/border2.png') 399px top no-repeat,
+            url('img/border2.png') 482px top no-repeat,
             url('img/border2.png') 532px bottom no-repeat,
             url('img/border2.png') 615px bottom no-repeat,
-            url('img/border3.png') 665px top no-repeat,
-            url('img/border3.png') 748px top no-repeat;
+            url('img/border2.png') 665px top no-repeat,
+            url('img/border2.png') 748px top no-repeat;
             background-size:1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
             1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
             1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
@@ -113,7 +113,7 @@
             transform:rotate(180deg);
         }
         .pageone li {
-            font-family: SourceHanSansCN-Medium;
+            /* font-family: SourceHanSansCN-Medium; */
             letter-spacing:3px;
             line-height: 22px;
             display: inline-block;
@@ -140,6 +140,8 @@
         }
         .floatRight a{
             font-size:14px;
+            display: inline-block;
+            width: 20px;
             font-family:'Georgia';
         }
         .dbl{
