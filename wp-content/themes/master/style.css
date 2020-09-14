@@ -23,13 +23,13 @@
             text-align: right;
         }
         body{
-              min-height:100%;
+              height:100%;
               background:url('img/flower.png') 0.5rem bottom no-repeat;
               background-size:307px 199px;
            }
         .container{
             width:1260px;
-            min-height:6.9rem;
+            height: 100%;;
             margin:auto;
             display:flex;
         }
@@ -55,10 +55,12 @@
             height:301px;
             position:relative;
             left:33px;
-            margin-top:2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
         }
         .homePage{
             width:753px;
+            height: 100%;
             margin-left:300px;
             background:url('img/border2.png')left bottom no-repeat,
             url('img/border2.png') 83px bottom no-repeat,
@@ -72,42 +74,43 @@
             url('img/border2.png') 615px bottom no-repeat,
             url('img/border2.png') 665px top no-repeat,
             url('img/border2.png') 748px top no-repeat;
-            background-size:1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
-            1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
-            1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
-            1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
-            1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem,
-            1px 3.45rem,1px 3.77rem,1px 3.77rem,1px 3.45rem;
+            background-size:1px 56.6%,1px 60.8%,1px 53.9%,1px 47.6%,
+            1px 56.6%,1px 60.8%,1px 53.9%,1px 47.6%,
+            1px 56.6%,1px 60.8%,1px 53.9%,1px 47.6%,
+            1px 56.6%,1px 60.8%,1px 53.9%,1px 47.6%,
+            1px 56.6%,1px 60.8%,1px 53.9%,1px 47.6%,
+            1px 56.6%,1px 60.8%,1px 53.9%,1px 47.6%;
         }
        
         .pageone{
             width:50px;
             position: relative;
-            top: 350px;
+            top: 40%;
             height: 450px;
             left: 0;
+            /* border: 1px solid blue; */
         }
         .first_pic{
             width:83px;
-            height:400px;
+            height:120%;
             position: absolute;
             left: -20px;
-            top: 120px;
+            top: 25%;
         }
         .sec_pic{
             width:83px;
-            height:300px;
+            height:90%;
             position: absolute;
-            left: -20px;
-            top: -350px;
+            left: -19px;
+            top: -100%;
         }
         .first_pic img{
             width:83px;
-            height:400px;
+            height:100%;
         }
         .sec_pic img{
             width:83px;
-            height:300px;
+            height:100%;
             -moz-transform:rotate(180deg); 
             -webkit-transform:rotate(180deg);
             transform:rotate(180deg);
@@ -124,10 +127,13 @@
             -ms-writing-mode: vertical-rl;
         }
         .homePagetitle{
+            /* height: 200px; */
+            height: 100%;
             display: flex;
             justify-content: space-between;
             position:relative;
-            bottom:50px;
+            /* bottom:50px; */
+            /* border: 1px solid red; */
         }
         .floatLeft a{
             font-size: 18px;
