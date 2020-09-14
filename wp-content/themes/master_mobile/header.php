@@ -46,7 +46,7 @@
       <ul >
       	<li>
       		<div class="actbg"></div>
-      		<a class="nav_b" href="localhost:8001">
+      		<a class="nav_b" href="http://gengyun.yc384.com">
       			<p>网站首页</p>
       			<p>Home</p>
       		</a>

@@ -33,8 +33,9 @@
         </div>
 
         <div class="workstwochapter">
-            <a onclick='pre()' href="javascript:void(0)" >上一章</a><br/>
-            <a onclick='next()' href="javascript:void(0)">下一章</a>
+        	<p ><a href="Work.php">返回上一级</a></p>
+            <p onclick='pre()'  >上一章</p>
+            <p onclick='next()' id="next" >下一章</a>
         </div> 
     </main>
     </nav>

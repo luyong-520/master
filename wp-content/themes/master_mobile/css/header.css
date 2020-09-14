@@ -199,4 +199,12 @@ a{
     height:420px;
     border:1px solid red;
 }
-
+.has-text-align-center{
+     text-align: center;
+    }
+.aligncenter{
+     text-align: center;
+      }
+.has-text-align-right{
+     text-align: right;
+    }

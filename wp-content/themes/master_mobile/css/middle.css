@@ -178,14 +178,16 @@ html{
     text-indent:.64rem;
 } 
 .workstwochapter{
-    margin-top:.3rem;
+    margin-top:-.3rem;
 }
-.workstwochapter a{
+.workstwochapter p{
     font-size: .28rem;
     color: #D18324;
     line-height: .48rem;
 }
-
+.workstwochapter p a{
+	color: #D18324;
+}
 
 /* 9 */
 .gsls{

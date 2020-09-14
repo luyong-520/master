@@ -3,7 +3,7 @@
    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-config.php' );
    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-includes/wp-db.php' );
    $page = isset($_GET['page']) ? (int)$_GET['page']: 1;
-   $pageSize = 2;
+   $pageSize = 5;
    $currentPage = ($page-1)*$pageSize;
 //    查询条数
    $countsql = "SELECT COUNT(DISTINCT post_title) unm
