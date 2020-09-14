@@ -180,14 +180,14 @@
     if(urlstr == 'Communication.php'  ){
     	id = 6
     }
-    let bindex = 0
+    let bindex = -1
      if(urlstr == 'Master.php'  ){
     	bindex = 0
     	}
     	if(urlstr == 'MastersPicture.php' ){
     	bindex = 1
     	}
-    let aindex = 0
+    let aindex = -1
     if(urlstr == 'Lecture.php' ||urlstr == 'Answer.php'){
     	aindex = 0
     }
@@ -211,7 +211,14 @@
     	$('.navbar .actbg').eq(1).show()
     	$('.nav_content').css({'display':'block'})
     	$('.lecture_content').css({'display':'none'})
-    	$('.nav_content a').eq(bindex).css({'color':'#D18324'})
+    	if(bindex == -1){
+    		$('.nav_content a').each(function(index){
+    			$('.nav_content a').eq(index).css({'color':'#ffffff'})
+    		})
+    	}else{
+    		$('.nav_content a').eq(bindex).css({'color':'#D18324'})
+    	}
+    	
     })
     //发音讲词导航点击事件
     $('.navbar .nav_b').eq(3).click(function (){
@@ -225,6 +232,12 @@
     	$('.navbar .actbg').eq(3).show()
     	$('.nav_content').css({'display':'none'})
     	$('.lecture_content').css({'display':'block'})
+    	if(aindex == -1){
+    		$('.nav_content a').each(function(index){
+    			$('.nav_content a').eq(index).css({'color':'#ffffff'})
+    		})
+    	}else{
     	$('.lecture_content a').eq(aindex).css({'color':'#D18324'})
+    	}
     })
   </script>

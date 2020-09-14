@@ -60,12 +60,12 @@ function checkForm(){
         $.get(`getform.php?name=${name}&phone=${phone}&message=${message}`,function (result) {
          var res = JSON.parse (result) 
          if(res.code=='200'){
-            layer.msg('提交成功');
+            layer.msg(res.msg);
             document.getElementById('name').value=''
             document.getElementById('phone').value=''
             document.getElementById('message').value=''
          }else{
-            layer.msg('提交失败'); 
+            layer.msg(res.msg); 
          }
         })
        

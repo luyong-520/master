@@ -67,25 +67,23 @@ function checkForm(){
          layer.open({
                 content: '手机号码填写有误，请重新填写',
                 });
-        // alert('手机号码填写有误，请重新填写') 
       }
     }else{
         flag=false
         layer.open({
                 content: '姓名不能为空，请重新填写',
                 });
-        // alert('姓名不能为空，请重新填写')
     } 
     if(flag){
         $.get(`getform.php?name=${name}&phone=${phone}&message=${message}`,function (result) {
          var res = JSON.parse (result) 
          if(res.code=='200'){
-            layer.msg('提交成功');
+            layer.msg(res.msg);
             document.getElementById('name').value=''
             document.getElementById('phone').value=''
             document.getElementById('message').value=''
          }else{
-            layer.msg('提交失败'); 
+            layer.msg(res.msg); 
          }
         })
        
