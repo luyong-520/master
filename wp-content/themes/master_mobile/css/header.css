@@ -163,6 +163,17 @@ body{
     bottom:38px;
     cursor: pointer;
 }
+.clearfix {
+            zoom: 1;
+ }
+.clearfix:after {
+    content: "";
+    display: block;
+    line-height: 0;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+   }
 /* footer */
 .footers{
     width:100%;

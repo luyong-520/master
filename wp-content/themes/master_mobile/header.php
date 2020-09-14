@@ -109,7 +109,7 @@
        <div class="headone"><?php echo mb_substr($word,0,2) ?></div>
        <div class="headtwo"><?php echo mb_substr($word,2,2) ?></div>
        <p><?php echo $laststr; ?></p> 
-       <img   class="menu" src="./img/menu.png">
+       <img   class="menu clearfix" src="./img/menu.png">
     </header>
     <script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
     

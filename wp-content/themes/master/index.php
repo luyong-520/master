@@ -17,8 +17,8 @@
     
     <div class="homePagetitle">
         <ul class="pageone" style="margin-left:20px;">
-            <li class="floatLeft"><a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php">耕耘师父</a></li>
-            <li class="floatRight"><a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php">Master</a></li>
+            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php">耕耘师父</a></li>
+            <li class="floatRight clearfix"><a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php">Master</a></li>
             <div class="first_pic ">
              <img src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
              <div class="nav">
@@ -28,15 +28,15 @@
             </div>
         </ul>
          <ul class="pageone">
-            <li class="floatLeft"><a href="<?php bloginfo('template_directory'); ?>/Works.php">师父著作</a></li>
-            <li class="floatRight"><a href="<?php bloginfo('template_directory'); ?>/Works.php">Works</a></li>
+            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/Works.php">师父著作</a></li>
+            <li class="floatRight clearfix"><a href="<?php bloginfo('template_directory'); ?>/Works.php">Works</a></li>
             <div class="sec_pic dno">
              <img src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
             </div>
         </ul>
         <ul class="pageone">
-            <li class="floatLeft"><a href="<?php bloginfo('template_directory'); ?>/Lecture.php">法音讲词</a></li>
-            <li class="floatRight"><a href="Lecture.php">Lecturn</a></li>
+            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/Lecture.php">法音讲词</a></li>
+            <li class="floatRight clearfix"><a href="Lecture.php">Lecturn</a></li>
             <div class="first_pic dno">
              <img style="margin-left:2px;" src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
              <div class="nav">
@@ -47,22 +47,22 @@
             </div>
         </ul>
         <ul class="pageone">
-            <li class="floatLeft"><a href="<?php bloginfo('template_directory'); ?>/Videos.php">讲法视频</a></li>
-            <li class="floatRight"><a href="<?php bloginfo('template_directory'); ?>/Videos.php">Videos</a></li>
+            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/Videos.php">讲法视频</a></li>
+            <li class="floatRight clearfix"><a href="<?php bloginfo('template_directory'); ?>/Videos.php">Videos</a></li>
             <div class="sec_pic dno">
              <img style="margin-left:4px;" src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
             </div>
         </ul>
         <ul class="pageone">
-            <li class="floatLeft"><a href="<?php bloginfo('template_directory'); ?>/Songs.php">禅曲欣赏</a></li>
-            <li class="floatRight"><a href="<?php bloginfo('template_directory'); ?>/Songs.php">Songs</a></li>
+            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/Songs.php">禅曲欣赏</a></li>
+            <li class="floatRight clearfix"><a href="<?php bloginfo('template_directory'); ?>/Songs.php">Songs</a></li>
             <div class="first_pic dno">
              <img style="margin-left:4px;" src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
             </div>
         </ul>
         <ul class="pageone" style="margin-right:22px;">
-            <li class="floatLeft"><a href="<?php bloginfo('template_directory'); ?>/Communication.php">联系我们</a></li>
-            <li class="floatRight"><a href="<?php bloginfo('template_directory'); ?>/Communication.php">ContactUs</a></li>
+            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/Communication.php">联系我们</a></li>
+            <li class="floatRight clearfix"><a href="<?php bloginfo('template_directory'); ?>/Communication.php">ContactUs</a></li>
             <div class="sec_pic dno">
              <img style="margin-left:5px;" src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
             </div>

@@ -138,6 +138,17 @@
         .floatRight{
             float:right;
         }
+        .clearfix {
+            zoom: 1;
+          }
+        .clearfix:after {
+            content: "";
+            display: block;
+            line-height: 0;
+            height: 0;
+            clear: both;
+            overflow: hidden;
+          }
         .floatRight a{
             font-size:14px;
             display: inline-block;
