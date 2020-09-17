@@ -8,8 +8,7 @@
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
 </head>
-<body>
-<video class="baradio" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2020/09/backradio.mp3" autoplay muted></video>
+<audio class="baradio" src="<?php echo esc_url( home_url( ) );?>/wp-content/uploads/2020/09/backradio.mp3" loop autoplay muted></audio>
    <div class="container">
    <div class="anxiang">
    <img src="<?php bloginfo('template_directory'); ?>/img/anxiang.png">
@@ -74,9 +73,11 @@
    </div>
 </body>
  <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js"></script>
+ <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
     document.body.addEventListener('mousedown', function(){
-        var vdo = $("video")[0]; //jquery
+        var vdo = $("audio")[0]; //jquery
+        vdo.play()
         vdo.muted = false;
     }, false);
     window.onload = () => {

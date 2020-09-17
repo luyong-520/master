@@ -282,7 +282,9 @@ video{
     white-space:nowrap;
     text-overflow:ellipsis;
 }
-
+#workstwochapter a:nth-child(2){
+    margin-left: 42px;
+}
 /* eight */
 #lectureone button{
     width:24px;
@@ -321,6 +323,7 @@ video{
 .lecturetwo p{
     font-size:14px;
     line-height: 28px;
+    margin-top: 24px;
     color: #41200A;
 }
 .gsls{
@@ -373,6 +376,7 @@ video{
 .lecturefourbook p{
     font-size: 14px;
     line-height: 24px;
+    margin-top: 24px;
 }
 /* one two */
 #videosone {

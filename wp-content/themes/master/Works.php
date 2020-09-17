@@ -11,26 +11,14 @@ WHERE ID IN
 (SELECT object_id
 FROM wp_term_relationships WHERE term_taxonomy_id =1  )";
 //    查询结果
-$sql = "SELECT ID,post_title,post_excerpt,post_content
+$sql = "SELECT ID,post_title,post_excerpt,post_content,COUNT(1) catnum
 FROM wp_posts
 WHERE ID IN
 (SELECT object_id
-FROM wp_term_relationships WHERE term_taxonomy_id =1  )  ORDER BY ID ASC ";       
+FROM wp_term_relationships WHERE term_taxonomy_id =1  ) GROUP BY `post_title` ORDER BY ID ASC LIMIT $currentPage,$pageSize";       
+$num = $wpdb->get_var($countsql); 
 $rows = $wpdb->get_results($sql,ARRAY_A);
-$res = array();   
-   foreach ($rows as $key=>$val) { 
-       $res[$val['post_title']][] = $val;
-
-   }  
-   $re = [];        
-   foreach ($res as $ke=>$va) {  
-       $re[$ke]['title'] = $ke; 
-       $re[$ke]['desc'] = $va[0]['post_excerpt']; 
-       $re[$ke]['list'] = $va;
-   } 
-   $re = array_values($re);
-   $strArr = array_slice($re,$currentPage,$pageSize);
-  $count = ceil(count($re)/$pageSize) ;
+$count = ceil($num/$pageSize);
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,12 +34,12 @@ $res = array();
    <?php get_header(); ?>
       <!-- 中间的表 -->
       <main class="lectureone">
-       <?php foreach ($strArr as $key => $value) {?>
+       <?php foreach ($rows as $key => $value) {?>
         <div class="lecturecontent marginTop24">
         <span></span>
-        <h1><?php echo $value['title'] ?></h1>
-        <p><?php echo $value['desc'] ?></p>
-        <a href=<?php echo "WorksCatalogone.php?page=0&&count=".count($value['list'])."&title=".$value['title'] ?> >阅读全文</a>
+        <h1><?php echo $value['post_title'] ?></h1>
+        <p><?php echo $value['post_excerpt'] ?></p>
+        <a href=<?php echo "WorksCatalogone.php?page=0&&count=".$value['catnum']."&title=".$value['post_title'] ?> >阅读全文</a>
         </div>
        <?php }  ?>
       </main>

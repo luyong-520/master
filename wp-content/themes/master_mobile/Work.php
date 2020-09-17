@@ -11,26 +11,14 @@ WHERE ID IN
 (SELECT object_id
 FROM wp_term_relationships WHERE term_taxonomy_id =1  )";
 //    查询结果
-$sql = "SELECT ID,post_title,post_excerpt,post_content
+$sql = "SELECT ID,post_title,post_excerpt,post_content,COUNT(1) catnum
 FROM wp_posts
 WHERE ID IN
 (SELECT object_id
-FROM wp_term_relationships WHERE term_taxonomy_id =1  )  ORDER BY ID ASC ";       
+FROM wp_term_relationships WHERE term_taxonomy_id =1  ) GROUP BY `post_title` ORDER BY ID ASC LIMIT $currentPage,$pageSize";       
+$num = $wpdb->get_var($countsql); 
 $rows = $wpdb->get_results($sql,ARRAY_A);
-$res = array();   
-   foreach ($rows as $key=>$val) { 
-       $res[$val['post_title']][] = $val;
-
-   }  
-   $re = [];        
-   foreach ($res as $ke=>$va) {  
-       $re[$ke]['title'] = $ke; 
-       $re[$ke]['desc'] = $va[0]['post_excerpt']; 
-       $re[$ke]['list'] = $va;
-   } 
-  $re = array_values($re);
-   $strArr = array_slice($re,$currentPage,$pageSize);
-  $count = ceil(count($re)/$pageSize) ;
+$count = ceil($num/$pageSize);
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,12 +33,12 @@ $res = array();
     <img class="weitu" src="./img/weitu.png">
     <div class="container">
     <main>
-    	 <?php foreach ($strArr as $key => $value) {?>
+    	 <?php foreach ($rows as $key => $value) {?>
         <div class="lecturecontent">
           <span class="displayBlock"></span>
-          <b class="displayBlock"><?php echo $value['title'] ?></b>
-          <p class="displayBlock"><?php echo $value['desc'] ?></p>
-          <a class="displayBlock" href=<?php echo "WorksCatalogone.php?page=0&&count=".count($value['list'])."&title=".$value['title'] ?> >阅读全文</a>
+          <b class="displayBlock"><?php echo $value['post_title'] ?></b>
+          <p class="displayBlock"><?php echo $value['post_excerpt'] ?></p>
+          <a class="displayBlock" href=<?php echo "WorksCatalogone.php?page=0&&count=".$value['catnum']."&title=".$value['post_title'] ?> >阅读全文</a>
         </div>
          <?php }  ?>
         <div class="paging marginTopFO">
@@ -69,9 +57,5 @@ $res = array();
 <script>
 	 var sid = window.location.search?Number(window.location.search.split('=')[1]):1
      activeClass(sid)
-//    function go(id) {
-//      window.location.href=`Work.php?page=${Number(id)+1}`
-//    }
-     
   </script>
 </html>

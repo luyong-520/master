@@ -37,7 +37,7 @@
       <main class="lecturefour">
         <h3 class="testAlign"><?php echo $rows[0]['post_title'] ?></h3>
         <div class="lecturefourbook">
-        <?php echo $datas[0]['post_content'] ?>
+          <?php echo $datas[0]['post_content'] ?>
         </div> 
         
          <!-- 分页    -->

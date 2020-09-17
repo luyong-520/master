@@ -7,7 +7,7 @@
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" />
 </head>
 <body>
-	<video class="baradio" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2020/09/backradio.mp3" autoplay muted></video>
+	<audio class="baradio" src="<?php echo esc_url( home_url( ) ); ?>/wp-content/uploads/2020/09/backradio.mp3" autoplay muted></audio>
     <div class="container">
      <ul>
         <li class="anxiang"><img src="<?php bloginfo('template_directory'); ?>/img/anxiang.png"></li>
@@ -75,7 +75,8 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js" ></script>
 <script type="text/javascript">
 	 document.body.addEventListener('touchend', function(){
-        var vdo = $("video")[0]; //jquery
+        var vdo = $("audio")[0]; //jquery
+        vdo.play();
         vdo.muted = false;
     }, false);
 </script>
