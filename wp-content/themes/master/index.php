@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>安祥网站</title>
     <script src="<?php bloginfo('template_directory'); ?>/js/rem.js"></script>
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" />
-   
+    <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
 </head>
 <body>
+<video class="baradio" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2020/09/backradio.mp3" autoplay muted></video>
    <div class="container">
    <div class="anxiang">
    <img src="<?php bloginfo('template_directory'); ?>/img/anxiang.png">
@@ -74,6 +75,10 @@
 </body>
  <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js"></script>
 <script>
+    document.body.addEventListener('mousedown', function(){
+        var vdo = $("video")[0]; //jquery
+        vdo.muted = false;
+    }, false);
     window.onload = () => {
               document.documentElement.style.overflow='hidden';
               var move=function(e){

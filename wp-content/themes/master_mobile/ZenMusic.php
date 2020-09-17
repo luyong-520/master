@@ -2,6 +2,7 @@
    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-config.php' );
    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-includes/wp-db.php' );
    $id = $_GET['id'];
+   $title = $_GET['title'];
    $sql = "SELECT ID,post_title,post_content,post_excerpt
    FROM wp_posts where ID = '$id'";       
    $rows = $wpdb->get_results($sql,ARRAY_A);  
@@ -9,8 +10,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <title><?php echo $title ?>_安祥网站</title>
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/middle.css" rel="stylesheet" />
 </head>

@@ -26,9 +26,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>禅曲欣赏_安祥网站</title>
     <link href="./css/public.css" rel="stylesheet" />
     <link href="./css/middle.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 <body>
     <div id="container">
@@ -42,7 +43,7 @@
                 
                <ul class="ZenMusic">
                <?php foreach ($value['list'] as $id => $item) {?>
-                 <li><a href="<?php echo 'ZenMusic.php?id='.$item['ID']; ?>"> <span><?php echo $item['post_title']; ?>………………………………………</span><a></li>
+                 <li><a href="<?php echo 'ZenMusic.php?id='.$item['ID'].'&title='.$item['post_title']; ?>"> <span><?php echo $item['post_title']; ?>………………………………………</span><a></li>
                  <?php } ?>
                </ul>
                

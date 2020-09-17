@@ -25,9 +25,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>师父讲词_安祥网站</title>
     <link href="./css/public.css" rel="stylesheet" />
     <link href="./css/middle.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 <body>
     <div id="container">
@@ -47,11 +48,11 @@
 
        <!-- 分页    -->
        <div id="paging" style="margin-top:42px;">
-        <button class="arrowleft"><img src="./img/arrowleft.png"></button>
+        <button onclick="movepre('Lecture.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
         <?php for($i=0;$i<$count;$i++) { ?>
-        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>)' ><button class="pagingred"></button><?php echo $i+1; ?></a>
+        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>,"Lecture.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
         <?php } ?>
-        <button class="arrowleft"><img src="./img/arrowright.png"></button>
+        <button onclick="movenex(<?php echo $count ?>,'Lecture.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
     </div>
     </div>
 
@@ -59,16 +60,8 @@
      <?php get_footer();?>
     <script src="./js/js.js"></script>
     <script>
-      window.onload = function () {
-       var id = window.location.search?Number(window.location.search.split('=')[1]):1
-       var paging = document.getElementById('paging');
-       var a = paging.getElementsByTagName("a");
-       a[id-1].classList.add("active");
-      } 
-      function go(id) {
-        window.location.href=`Lecture.php?page=${Number(id)+1}`
-      }
-     
+      var id = window.location.search?Number(window.location.search.split('=')[1]):1
+      activeClass()
   </script>
 </body>
 </html>

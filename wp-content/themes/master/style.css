@@ -88,7 +88,6 @@
             top: 40%;
             height: 450px;
             left: 0;
-            /* border: 1px solid blue; */
         }
         .first_pic{
             width:83px;
@@ -136,6 +135,8 @@
             /* border: 1px solid red; */
         }
         .floatLeft a{
+            position: relative;
+            z-index: 999;
             font-size: 18px;
         }
         .floatLeft{
@@ -166,4 +167,11 @@
         }
         .dno{
             display:none;
+        }
+        .baradio{
+            width:0px;
+            height:0px;
+            position:fixed;
+            left:0px;
+            top:0px;
         }

@@ -65,8 +65,8 @@
         <button class="sjx"></button>
         <div class="dropdown-content" style="width:50px;">
           <div class="dcbtn">
-            <a href="./AboutMaster.php" class="dcbtnone"><button class="dot"></button>师父简介</a>
-            <a href="./MastersPicture.php" class="dcbtnone"><button class="dot"></button>师父法相</a>
+            <a href="./AboutMaster.php" class="dcbtnone"><span class="dot"></span>师父简介</a>
+            <a href="./MastersPicture.php" class="dcbtnone"><span class="dot"></span>师父法相</a>
           </div>
         </div>
         </div>
@@ -87,9 +87,9 @@
         <button class="sjx"></button>
         <div class="dropdown-content" style="width:72px;">
           <div class="dcbtn">
-            <a href="./Lecture.php" class="dcbtnone"><button class="dot"></button>师父讲词</a>
-            <a href="./Disabuse.php" class="dcbtnone"><button class="dot"></button>师父解惑</a>
-            <a href="./BookNotes.php" class="dcbtnone"><button class="dot"></button>耕耘书笺</a>
+            <a href="./Lecture.php" class="dcbtnone"><span class="dot"></span>师父讲词</a>
+            <a href="./Disabuse.php" class="dcbtnone"><span class="dot"></span>师父解惑</a>
+            <a href="./BookNotes.php" class="dcbtnone"><span class="dot"></span>耕耘书笺</a>
           </div>
         </div>
       </div>

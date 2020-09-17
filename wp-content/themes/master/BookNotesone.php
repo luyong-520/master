@@ -23,10 +23,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><?php echo $title ?>_安祥网站</title>
     <link href="./css/public.css" rel="stylesheet" />
     <link href="./css/middle.css" rel="stylesheet" />
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 <body>
     <div id="container">
@@ -41,11 +42,11 @@
         
          <!-- 分页    -->
        <div id="paging" style="margin:42px auto;">
-        <button class="arrowleft"><img src="./img/arrowleft.png"></button>
+        <button onclick="detailePre('BookNotesone.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
         <?php for($i=0;$i<$count;$i++) { ?>
-        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>)' ><button class="pagingred"></button><?php echo $i+1; ?></a>
+        <a href="javascript:void(0)"  onclick='godetaile(<?php echo $i ?>,"BookNotesone.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
         <?php } ?>
-        <button class="arrowleft"><img src="./img/arrowright.png"></button>
+        <button onclick="detaileNex(<?php echo $count ?>,'BookNotesone.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
     </div>
           
       </main>
@@ -53,36 +54,10 @@
 
      <!-- 底部 -->
      <?php get_footer();?>
-    <script>
-      window.onload = function () {
-          let id
-         if(window.location.search.indexOf('&&')>-1){
-            window.location.search.split('&&').forEach(val => {
-              if(val.indexOf('page')>-1){
-                id = Number(val.split('=')[1])
-              };
-          });    
-         }else{
-             id = 1
-         } 
-       var paging = document.getElementById('paging');
-       var a = paging.getElementsByTagName("a");
-       a[id-1].classList.add("active");
-      } 
-      function go(id) {
-        let title
-         if(window.location.search.indexOf('&&')>-1){
-            window.location.search.split('&&').forEach(val => {
-            
-              if(val.indexOf('title')>-1){
-                title = val.split('=')[1]
-              };
-          });    
-         }else{
-             title = window.location.search.split('=')[1]
-         }    
-        window.location.href=`BookNotesone.php?title=${title}&&page=${Number(id)+1}`
-      }
+     <script src="js/js.js"></script>
+<script>
+      let id = getId()
+      activeClass()
   </script>
 </body>
 </html>

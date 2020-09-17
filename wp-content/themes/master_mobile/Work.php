@@ -1,8 +1,9 @@
 <?php
 require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-config.php' );
 require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-includes/wp-db.php' );
-// $page = isset($_GET['page']) ? (int)$_GET['page']: 1;
-// $currentPage = ($page-1)*5;
+$page = isset($_GET['page']) ? (int)$_GET['page']: 1;
+$pageSize = 5;
+$currentPage = ($page-1)*$pageSize;
 //    查询条数
 $countsql = "SELECT COUNT(DISTINCT post_title) unm
 FROM wp_posts
@@ -27,14 +28,15 @@ $res = array();
        $re[$ke]['desc'] = $va[0]['post_excerpt']; 
        $re[$ke]['list'] = $va;
    } 
-   $re = array_values($re);
-$count = ceil(count($re)/5) ;
+  $re = array_values($re);
+   $strArr = array_slice($re,$currentPage,$pageSize);
+  $count = ceil(count($re)/$pageSize) ;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <title>师父著作_安祥网站</title>
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/middle.css" rel="stylesheet" />
 </head>
@@ -43,7 +45,7 @@ $count = ceil(count($re)/5) ;
     <img class="weitu" src="./img/weitu.png">
     <div class="container">
     <main>
-    	 <?php foreach ($re as $key => $value) {?>
+    	 <?php foreach ($strArr as $key => $value) {?>
         <div class="lecturecontent">
           <span class="displayBlock"></span>
           <b class="displayBlock"><?php echo $value['title'] ?></b>
@@ -52,27 +54,24 @@ $count = ceil(count($re)/5) ;
         </div>
          <?php }  ?>
         <div class="paging marginTopFO">
-            <button class="arrowleft"><img src="./img/arrowleft.png"></button>
+            <button onclick="movepre('Work.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
             <?php for($i=0;$i<$count;$i++) { ?>
-            <a href="#" class="active" onclick='go(<?php echo $i ?>)'><button class="pagingred"></button><?php echo $i+1; ?></a>
+            <a href="#"  onclick='go(<?php echo $i ?>,"Work.php")'><button class="pagingred"></button><?php echo $i+1; ?></a>
            <?php } ?>
-            <button class="arrowleft"><img src="./img/arrowright.png"></button>
+            <button onclick="movenex(<?php echo $count ?>,'Work.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
         </div>
     </main>
 </div>
 
    <?php include('footer.php') ?>
 </body>
+<script type="text/javascript" src="js/my.js"></script>
 <script>
-      window.onload = function () {
-       var id = window.location.search?Number(window.location.search.split('=')[1]):1
-       var paging = document.getElementsByClassName('paging')[0];
-       var a = paging.getElementsByTagName("a");
-       a[id-1].classList.add("active");
-      } 
-      function go(id) {
-        window.location.href=`Work.php?page=${Number(id)+1}`
-      }
+	 var sid = window.location.search?Number(window.location.search.split('=')[1]):1
+     activeClass(sid)
+//    function go(id) {
+//      window.location.href=`Work.php?page=${Number(id)+1}`
+//    }
      
   </script>
 </html>

@@ -1,6 +1,8 @@
 <?php 
 require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-config.php' );
 require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-includes/wp-db.php' );
+date_default_timezone_set("PRC");
+$showtime=date("Y-m-d H:i:s");
 $name = $_GET['name'];
 $phone = (int)$_GET['phone'];
 $message = $_GET['message'];
@@ -14,7 +16,7 @@ foreach ($result as $key => $value) {
 	}
 }
 if($flag){
-  $sql = "INSERT INTO wp_comments (comment_author,comment_author_email,comment_content) VALUES ('$name','$phone','$message')";
+  $sql = "INSERT INTO wp_comments (comment_author,comment_author_email,comment_content,comment_date) VALUES ('$name','$phone','$message','$showtime')";
 $wpdb->query($sql);
 $rows= $wpdb->query($sql);
   if($rows >0){

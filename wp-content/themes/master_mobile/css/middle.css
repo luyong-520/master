@@ -106,7 +106,7 @@ html{
     margin-top:.28rem;
 }
 .lecturecontent p{
-    font-size: .28rem;
+    font-size: .32rem;
     line-height: .48rem;
     margin-top:.2rem;
 }
@@ -175,15 +175,16 @@ html{
     font-size: .32rem;
     line-height: .58rem;
     margin-top:.64rem;
-    text-indent:.64rem;
+    /*text-indent:.64rem;*/
 } 
 .workstwochapter{
     margin-top:-.3rem;
 }
 .workstwochapter p{
+	height: .56rem;
     font-size: .28rem;
     color: #D18324;
-    line-height: .48rem;
+    line-height: .56rem;
 }
 .workstwochapter p a{
 	color: #D18324;
@@ -343,4 +344,45 @@ html{
     color: #FFFFFF;
     background: #D18324;
     
+}
+    	/*放大图片样式*/
+#fullPage{
+	display: none;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 19930428;
+	}
+#fullPage img{
+	display: block;
+	width: 100%;
+}	
+ #canvas{
+	width: 100%;
+	height: 100%;
+	background: none;
+	display: block;
+}
+/*返回顶部样式*/
+.gotop{
+	 position: fixed;
+	  bottom:.5rem;
+	  right:.1rem;
+	  height: 0.5rem;
+	  width: .5rem;
+	  font-size: .2rem;
+	  border-radius: 50%;
+	  z-index: 9999999999;
+	  background-color: #fff;
+	  text-align: center;
+	  line-height: .5rem;
+	  display: none;
+}
+.gotop img{
+	width: .3rem;
+	height: .15rem;
+	transform: rotate(-90deg);
 }

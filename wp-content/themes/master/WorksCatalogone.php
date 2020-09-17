@@ -14,9 +14,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><?php echo $title ?>_安祥网站</title>
     <link href="css/public.css" rel="stylesheet" />
     <link href="css/middle.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 <body>
     <div id="container">
@@ -32,57 +33,15 @@
 
            <div id="workstwochapter">
                <a  href="Works.php">返回上一级</a>
-               <a onclick='pre()' href="javascript:void(0)">上一章</a>
-               <a id="next" onclick='next(this)' href="javascript:void(0)" style="margin-left:5%; width: 45%;">下一章</a>
+               <a onclick='workpre()' href="javascript:void(0)">上一章</a>
+               <a id="next" onclick='worknext()' href="javascript:void(0)" style="margin-left:5%; width: 45%;">下一章</a>
            </div>
       </main>
     </div>
 
      <!-- 底部 -->
      <?php get_footer();?>
-    <script>
-      function pre(params) {
-        let page = 0
-        let title 
-          window.location.search.split('&').forEach(val => {
-              if(val.indexOf('page')>-1){
-                page = val.split('=')[1]
-              };
-              if(val.indexOf('count')>-1){
-                count = Number(val.split('=')[1])
-              };
-              if(val.indexOf('title')>-1){
-                title = val.split('=')[1]
-              };
-          });
-           if(page <= 0){
-           }else{
-            page--
-            window.location.href=`WorksCatalogone.php?page=${page}&&count=${count}&title=${title}`
-           };  
-      }
-      function next(params) {
-        let page = 0
-        let count = 0
-        let title 
-          window.location.search.split('&').forEach(val => {
-              if(val.indexOf('page')>-1){
-                page = val.split('=')[1]
-              };
-              if(val.indexOf('count')>-1){
-                count = Number(val.split('=')[1])
-              };
-              if(val.indexOf('title')>-1){
-                title = val.split('=')[1]
-              };
-          });
-           if(page >= count-1){
-            document.getElementById('next').innerHTML='最后一章'
-           }else{
-            page++
-            window.location.href=`WorksCatalogone.php?page=${page}&&count=${count}&title=${title}`
-           };  
-      }
-  </script>
+   
 </body>
+<script src="js/js.js"></script>
 </html>

@@ -27,11 +27,11 @@ function getTitle () {
     return title
 }
 // 页面初始化下面分页数字上面有圆点
-function activeClass () {
+function activeClass (id) {
     window.onload = function () {
-        var paging = document.getElementById('paging');
+        var paging = document.getElementsByClassName('paging')[0];
         var a = paging.getElementsByTagName("a");
-        a[id - 1].classList.add("active");
+        a[id-1].classList.add("active");
     }
 }
 // 点击数字跳转

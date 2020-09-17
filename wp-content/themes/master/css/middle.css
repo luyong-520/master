@@ -165,6 +165,7 @@ video{
 .arrowleft{
     border:none;
     background: none; 
+    cursor: pointer;
 }
 .arrowleft img{
     width:15px;

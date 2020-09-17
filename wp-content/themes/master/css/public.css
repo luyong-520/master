@@ -118,12 +118,14 @@ body{
     cursor: pointer;
 }
 .dot{
-    width:6px;
-    height:6px;
+    width:5px;
+    height:5px;
     border-radius:50%;
     background-color:#DFDCD2;
     border:1px solid #DFDCD2;
     position: relative;
+    display: inline-block;
+    left: 0;
     bottom:4px;
 }
 .dcbtn{

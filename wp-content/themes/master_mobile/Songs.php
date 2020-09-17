@@ -23,8 +23,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <title>禅曲欣赏_安祥网站</title>
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/middle.css" rel="stylesheet" />
 </head>
@@ -39,7 +39,7 @@
         <ul class="song">
           <b class="displayBlock hiddens"><?php echo $key+1 ?> 、<?php echo $value['title'] ?></b>
             <?php foreach ($value['list'] as $id => $item) {?>
-            <li class="music hiddens displayBlock"><a href="<?php echo 'ZenMusic.php?id='.$item['ID']; ?>"><span><?php echo $item['post_title']; ?>………………………………………………………………………………</span><a></li>
+            <li class="music hiddens displayBlock"><a href="<?php echo 'ZenMusic.php?id='.$item['ID'].'&title='.$item['post_title']; ?>"><span><?php echo $item['post_title']; ?>………………………………………………………………………………</span><a></li>
            <?php } ?>
         </ul>
         <?php } ?>

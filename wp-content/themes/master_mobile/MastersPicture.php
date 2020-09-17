@@ -13,11 +13,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <title>师父法相_安祥网站</title>
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/middle.css" rel="stylesheet" />
-    <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/0.1.0/viewer.css" rel="stylesheet">
 </head>
 <body>
 	<?php include('header.php') ?>
@@ -31,40 +30,43 @@
       </div>
       <?php } ?>
       </div>	
-     
+      <div id="fullPage">
+			<canvas id="canvas"></canvas>
+		</div>
     <!-- 分页    -->
     <div class="paging marginTopFO">
-        <button class="arrowleft"><img src="./img/arrowleft.png"></button>
-        <!--<a href="#" class="active"><button class="pagingred"></button>01</a>-->
+        <button onclick="movepre('MastersPicture.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
         <?php for($i=0;$i<$count;$i++) { ?>
-         <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>)' >
+         <a href="javascript:void(0)" onclick='go(<?php echo $i ?>,"MastersPicture.php")' >
          	<button class="pagingred"></button>
          	<?php echo $i+1; ?>
          </a>
          <?php } ?>
-        <button class="arrowleft"><img src="./img/arrowright.png"></button>
+        <button onclick="movenex(<?php echo $count ?>,'MastersPicture.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
     </div>
     </main>
 </div>
 
     <?php include('footer.php') ?>
 </body>
-<script src="https://cdn.bootcdn.net/ajax/libs/viewerjs/0.1.0/viewer.js"></script>
+<!--<script src="https://cdn.bootcdn.net/ajax/libs/viewerjs/0.1.0/viewer.js"></script>-->
+<script src="js/show.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/my.js"></script>
 <script>
-      window.onload = function () {
-       var id = window.location.search?Number(window.location.search.split('=')[1]):1
-       var paging = document.getElementsByClassName('paging')[0];
-       var a = paging.getElementsByTagName("a");
-       a[id-1].classList.add("active");
-      } 
-      function go(id) {
-        window.location.href=`MastersPicture.php?page=${Number(id)+1}`
-      }
-		var viewer = new Viewer(document.getElementById('sucaihuo'), {
-			url: 'data-original',
-            vviewed: function () {
-           viewer.view(0);
-       }
-		});
+	var sid = window.location.search?Number(window.location.search.split('=')[1]):1
+	activeClass(sid)
+    
+      //使用方法
+			var wxScale=new WxScale({
+				fullPage:document.querySelector("#fullPage"),
+				canvas:document.querySelector("#canvas")
+			});
+			var imgBox=document.querySelectorAll("#sucaihuo img");
+			for(var i=0; i<imgBox.length; i++){
+				imgBox[i].onclick=function(e){
+					wxScale.start(this);   //这里的this指向需要放大的这张图片
+				}
+			}
+
 </script>
 </html>

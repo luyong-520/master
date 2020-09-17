@@ -24,8 +24,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <title>师父解惑_安祥网站</title>
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/middle.css" rel="stylesheet" />
 </head>
@@ -43,27 +43,20 @@
         <?php } ?>
         	
         <div class="paging marginTopFO">
-            <button class="arrowleft"><img src="./img/arrowleft.png"></button>
+            <button onclick="movepre('Disabuse.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
            <?php for($i=0;$i<$count;$i++) { ?>
-	        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>)' ><button class="pagingred"></button><?php echo $i+1; ?></a>
+	        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>,"Disabuse.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
 	        <?php } ?>
-            <button class="arrowleft"><img src="./img/arrowright.png"></button>
+            <button onclick="movenex(<?php echo $count ?>,'Disabuse.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
         </div>
     </main>
     </nav>
 
     <?php include('footer.php') ?>
 </body>
+<script type="text/javascript" src="js/my.js"></script>
 <script>
-      window.onload = function () {
-       var id = window.location.search?Number(window.location.search.split('=')[1]):1
-       var paging = document.getElementsByClassName('paging')[0];
-       var a = paging.getElementsByTagName("a");
-       a[id-1].classList.add("active");
-      } 
-      function go(id) {
-        window.location.href=`Lecture.php?page=${Number(id)+1}`
-      }
-     
+	var sid = window.location.search?Number(window.location.search.split('=')[1]):1
+	activeClass(sid) 
   </script>
 </html>

@@ -22,8 +22,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <title>耕云书笺_安祥网站</title>
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/middle.css" rel="stylesheet" />
 </head>
@@ -44,25 +44,19 @@
         </nav>
         <!-- 分页    -->
        <div class="paging marginTopFO">
-            <button class="arrowleft"><img src="./img/arrowleft.png"></button>
+            <button onclick="movepre('BookNotes.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
            <?php for($i=0;$i<$count;$i++) { ?>
-	        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>)' ><button class="pagingred"></button><?php echo $i+1; ?></a>
+	        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>,"BookNotes.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
 	        <?php } ?>
-            <button class="arrowleft"><img src="./img/arrowright.png"></button>
+            <button onclick="movenex(<?php echo $count ?>,'BookNotes.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
         </div>
      <!-- 底部 -->
      <?php get_footer();?>
-    <script>
-      window.onload = function () {
-       var id = window.location.search?Number(window.location.search.split('=')[1]):1
-       var paging = document.getElementsByClassName('paging')[0];
-       var a = paging.getElementsByTagName("a");
-       a[id-1].classList.add("active");
-      } 
-      function go(id) {
-        window.location.href=`BookNotes.php?page=${Number(id)+1}`
-      }
-     
-  </script>
+
 </body>
+   <script type="text/javascript" src="js/my.js"></script>
+<script>
+	var sid = window.location.search?Number(window.location.search.split('=')[1]):1
+	activeClass(sid) 
+  </script>
 </html>
