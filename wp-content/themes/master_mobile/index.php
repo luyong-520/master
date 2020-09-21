@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
     <title>安祥网站</title>
-    <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" />
+    <link href="<?php bloginfo( 'stylesheet_url' ); ?>?t=v1.0.0" rel="stylesheet" />
 </head>
 <body>
 	<audio class="baradio" src="<?php echo esc_url( home_url( ) ); ?>/wp-content/uploads/2020/09/backradio.mp3" autoplay muted></audio>
@@ -83,6 +87,7 @@
 </body>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js" ></script>
 <script type="text/javascript">
+	 console.log('version=v1.0.0')
 	 document.body.addEventListener('touchend', function(){
         var vdo = $("audio")[0]; //jquery
         vdo.play();

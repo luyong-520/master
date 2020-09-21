@@ -78,13 +78,14 @@ a{
 }
 .page_lecture{
 	position: absolute; 
+	display: flex;
     width:1.3rem;
     height:1.48em;
     background: #DFDCD2;
     border-radius:.05rem;
     left: .8rem;
     top: .8rem;
-    display: flex;
+   
 }
 .page_lecture:before {
    content: "";
