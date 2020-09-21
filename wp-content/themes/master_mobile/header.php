@@ -23,7 +23,7 @@
     $laststr = 'Dispel doubt';
    }
    if($last=='BookNotes.php'||$last=='BookNotesone.php'){
-    $word = '耕耘书笺';
+    $word = '耕云书笺';
     $laststr = 'Writing notes';
    }
    if($last=='Videos.php'){
@@ -53,8 +53,8 @@
       	</li>
       	<li >
       		<div class="actbg"></div>
-      		<a class="nav_b" href="javascript:void(0)">
-      			<p >耕耘师父</p>
+      		<a class="nav_b" href="Master.php">
+      			<p >耕云师父</p>
       			<p>Master</p>
       		</a>
       		<div  class="nav_content">
@@ -72,14 +72,14 @@
       	</li>
       	<li>
       		<div class="actbg"></div>
-      		<a class="nav_b" href="javascript:void(0)">
+      		<a class="nav_b" href="Lecture.php">
       			<p>法音讲词</p>
       			<p>Lecture</p>
       		</a>
       		<div class="lecture_content">
       			<a href="Lecture.php">师父讲词</a>
       			<a href="Disabuse.php">师父解惑</a>
-      			<a href="BookNotes.php">耕耘书笺</a>
+      			<a href="BookNotes.php">耕云书笺</a>
       		</div>
       	</li>
       	<li>

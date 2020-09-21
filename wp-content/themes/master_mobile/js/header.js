@@ -96,17 +96,8 @@
     $('.navbar .nav_b').eq(id).css({'color':'#D18324'}).siblings().css({'color':'#ffffff'});
     $('.navbar .actbg').eq(id).show()
     //耕耘师父导航点击事件
-    $('.navbar .nav_b').eq(1).click(function (){
-    	$('.navbar .nav_b').each(function(index){
-    		$('.navbar .nav_b').eq(index).css({'color':'#ffffff'})
-    	})
-    	$('.navbar .actbg').each(function(index){
-    		$('.navbar .actbg').eq(index).hide()
-    	})
-    	$('.navbar .nav_b').eq(1).css({'color':'#D18324'})
-    	$('.navbar .actbg').eq(1).show()
+    if(id==1){
     	$('.nav_content').css({'display':'block'})
-    	$('.lecture_content').css({'display':'none'})
     	if(bindex == -1){
     		$('.nav_content a').each(function(index){
     			$('.nav_content a').eq(index).css({'color':'#ffffff'})
@@ -114,19 +105,31 @@
     	}else{
     		$('.nav_content a').eq(bindex).css({'color':'#D18324'})
     	}
-    	
-    })
-    //发音讲词导航点击事件
-    $('.navbar .nav_b').eq(3).click(function (){
-    	$('.navbar .nav_b').each(function(index){
-    		$('.navbar .nav_b').eq(index).css({'color':'#ffffff'})
-    	})
-    	$('.navbar .actbg').each(function(index){
-    		$('.navbar .actbg').eq(index).hide()
-    	})
-    	$('.navbar .nav_b').eq(3).css({'color':'#D18324'})
-    	$('.navbar .actbg').eq(3).show()
+    }else{
     	$('.nav_content').css({'display':'none'})
+    }
+//  $('.navbar .nav_b').eq(1).click(function (){
+//  	$('.navbar .nav_b').each(function(index){
+//  		$('.navbar .nav_b').eq(index).css({'color':'#ffffff'})
+//  	})
+//  	$('.navbar .actbg').each(function(index){
+//  		$('.navbar .actbg').eq(index).hide()
+//  	})
+//  	$('.navbar .nav_b').eq(1).css({'color':'#D18324'})
+//  	$('.navbar .actbg').eq(1).show()
+//  	$('.nav_content').css({'display':'block'})
+//  	$('.lecture_content').css({'display':'none'})
+//  	if(bindex == -1){
+//  		$('.nav_content a').each(function(index){
+//  			$('.nav_content a').eq(index).css({'color':'#ffffff'})
+//  		})
+//  	}else{
+//  		$('.nav_content a').eq(bindex).css({'color':'#D18324'})
+//  	}
+//  	
+//  })
+    //发音讲词导航点击事件
+    if(id==3){
     	$('.lecture_content').css({'display':'block'})
     	if(aindex == -1){
     		$('.nav_content a').each(function(index){
@@ -135,4 +138,25 @@
     	}else{
     	$('.lecture_content a').eq(aindex).css({'color':'#D18324'})
     	}
-    })
+    }else{
+    	$('.lecture_content').css({'display':'none'})
+    }
+//  $('.navbar .nav_b').eq(3).click(function (){
+//  	$('.navbar .nav_b').each(function(index){
+//  		$('.navbar .nav_b').eq(index).css({'color':'#ffffff'})
+//  	})
+//  	$('.navbar .actbg').each(function(index){
+//  		$('.navbar .actbg').eq(index).hide()
+//  	})
+//  	$('.navbar .nav_b').eq(3).css({'color':'#D18324'})
+//  	$('.navbar .actbg').eq(3).show()
+//  	$('.nav_content').css({'display':'none'})
+//  	$('.lecture_content').css({'display':'block'})
+//  	if(aindex == -1){
+//  		$('.nav_content a').each(function(index){
+//  			$('.nav_content a').eq(index).css({'color':'#ffffff'})
+//  		})
+//  	}else{
+//  	$('.lecture_content a').eq(aindex).css({'color':'#D18324'})
+//  	}
+//  })

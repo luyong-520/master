@@ -26,6 +26,7 @@
               height:100%;
               background:url('img/flower.png') 0.5rem bottom no-repeat;
               background-size:307px 199px;
+              overflow: hidden;
            }
         .container{
             width:1260px;
@@ -50,13 +51,17 @@
             color: #FFFFFF;
             writing-mode: vertical-lr;
         } 
-        .anxiang img{
+        .anxiang{
             width:151px;
             height:301px;
             position:relative;
             left:33px;
             top: 50%;
             transform: translateY(-50%);
+        }
+        .anxiang img{
+            width:151px;
+            height:301px; 
         }
         .homePage{
             width:753px;
@@ -119,11 +124,8 @@
             letter-spacing:3px;
             line-height: 22px;
             display: inline-block;
-            width: 23px;
-            writing-mode: vertical-rl;
-            -webkit-writing-mode: vertical-rl;
-            -moz-writing-mode: vertical-rl;
-            -ms-writing-mode: vertical-rl;
+            width: 23px; 
+           
         }
         .homePagetitle{
             /* height: 200px; */
@@ -138,6 +140,8 @@
             position: relative;
             z-index: 999;
             font-size: 18px;
+            writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
+            writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/ 
         }
         .floatLeft{
             float:left;
@@ -161,6 +165,8 @@
             display: inline-block;
             width: 20px;
             font-family:'Georgia';
+            writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
+            writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/ 
         }
         .dbl{
             display:block;

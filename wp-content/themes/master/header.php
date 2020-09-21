@@ -23,7 +23,7 @@
     $laststr = 'Dispel Doubt';
    }
    if($last=='BookNotes.php'||$last=='BookNotesone.php'){
-    $word = '耕耘书笺';
+    $word = '耕云书笺';
     $laststr = 'Writing Notes';
    }
    if($last=='Videos.php'){
@@ -58,7 +58,7 @@
         
         <div id="dropdown" style="width:32px">
         <div class="dropbtn">
-          <a href="./AboutMaster.php" class="dropdownone">耕耘师父</a>
+          <a href="./AboutMaster.php" class="dropdownone">耕云师父</a>
           <a href="./AboutMaster.php" class="dropdowntwo">Master</a>
         </div>
 
@@ -89,7 +89,7 @@
           <div class="dcbtn">
             <a href="./Lecture.php" class="dcbtnone"><span class="dot"></span>师父讲词</a>
             <a href="./Disabuse.php" class="dcbtnone"><span class="dot"></span>师父解惑</a>
-            <a href="./BookNotes.php" class="dcbtnone"><span class="dot"></span>耕耘书笺</a>
+            <a href="./BookNotes.php" class="dcbtnone"><span class="dot"></span>耕云书笺</a>
           </div>
         </div>
       </div>

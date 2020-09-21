@@ -16,15 +16,24 @@
      <div class="menu menu-one">
      <ul >
         <li class="page_item page-item-2">
-            <a href="<?php bloginfo('template_directory'); ?>/Master.php" class="sizeone">耕耘师父</a>
+            <a href="<?php bloginfo('template_directory'); ?>/Master.php" class="sizeone">耕云师父</a>
             <a href="<?php bloginfo('template_directory'); ?>/Master.php" class="sizetwo">Master</a>
         </li>
+        <div  class="nav_master">
+      			<a href="<?php bloginfo('template_directory'); ?>/Master.php">师父简介</a>
+      			<a href="<?php bloginfo('template_directory'); ?>/MastersPicture.php">师父法相</a>
+        </div>
      </ul>
      <ul >
         <li class="page_item page-item-2">
             <a href="<?php bloginfo('template_directory'); ?>/Lecture.php" class="sizeone">法音讲词</a>
             <a href="<?php bloginfo('template_directory'); ?>/Lecture.php" class="sizetwo">Lecture</a>
          </li>
+         <div  class="nav_lecture">
+      			<a href="<?php bloginfo('template_directory'); ?>/Lecture.php"  >师父讲词</a>
+                <a href="<?php bloginfo('template_directory'); ?>/Disabuse.php"  >师父解惑</a>
+                <a href="<?php bloginfo('template_directory'); ?>/BookNotes.php"   >耕云书笺</a>
+        </div>
      </ul>
      <ul style="margin-left: .1rem;">
         <li class="page_item page-item-2">

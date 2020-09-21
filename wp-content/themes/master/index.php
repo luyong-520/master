@@ -17,7 +17,7 @@
     
     <div class="homePagetitle">
         <ul class="pageone" style="margin-left:20px;">
-            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php">耕耘师父</a></li>
+            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php">耕云师父</a></li>
             <li class="floatRight clearfix"><a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php">Master</a></li>
             <div class="first_pic ">
              <img src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
@@ -42,7 +42,7 @@
              <div class="nav">
                 <a href="<?php bloginfo('template_directory'); ?>/Lecture.php"  >师父讲词</a>
                 <a href="<?php bloginfo('template_directory'); ?>/Disabuse.php"  >师父解惑</a>
-                <a href="<?php bloginfo('template_directory'); ?>/BookNotes.php"   >耕耘书笺</a>
+                <a href="<?php bloginfo('template_directory'); ?>/BookNotes.php"   >耕云书笺</a>
             </div>
             </div>
         </ul>

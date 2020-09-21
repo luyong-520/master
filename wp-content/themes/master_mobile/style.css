@@ -43,20 +43,89 @@ a{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
 .page_item{
-    width:.8rem;
+    width:.65rem;
     height: 1.48rem;
     display: flex;
     justify-content:flex-start;
 }
-.page_item a{
-    writing-mode: vertical-lr;
-    writing-mode: tb-lr; 
+.nav_master{
+	position: absolute; 
+    width:.8rem;
+    height:1.48em;
+    background: #DFDCD2;
+    border-radius:.05rem;
+    left: .8rem;
+    top: .8rem;
+    display: flex;
+}
+.nav_master:before {
+   content: "";
+   position: absolute;
+   top: .18rem; 
+   left: -0.14rem;
+   border-top: 0.14rem solid transparent;
+   border-right: 0.14rem solid;
+   border-bottom: 0.14rem solid transparent;
+   border-right-color: #DFDCD2;
+}
+.nav_master a{
+	display: block;
+	font-size: .14rem;
+	line-height: .28rem;
+	margin: .2rem .05rem 0 .05rem;
+	color: #333333;
+	writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+}
+.nav_lecture{
+	position: absolute; 
+    width:1.2rem;
+    height:1.48em;
+    background: #DFDCD2;
+    border-radius:.05rem;
+    left: .8rem;
+    top: .8rem;
+    display: flex;
+}
+.nav_lecture:before {
+   content: "";
+   position: absolute;
+   top: .18rem; 
+   left: -0.14rem;
+   border-top: 0.14rem solid transparent;
+   border-right: 0.14rem solid;
+   border-bottom: 0.14rem solid transparent;
+   border-right-color: #DFDCD2;
+}
+.nav_lecture a{
+	display: block;
+	font-size: .14rem;
+	line-height: .28rem;
+	margin: .2rem .05rem 0 .05rem;
+	color: #333333;
+	writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+}
+.page_item a:nth-child(2){
+    writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
+    writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/ 
+    display: block; 
+    height: 1.48rem;
+}
+.page_item a:nth-child(1){
     display: block; 
     height: 1.48rem;
 }
 .menu-one{
     margin-left:12%;
     margin-top:0.8rem;
+}
+.menu-one ul{
+	position: relative;
 }
 .menu-one li{
 	margin-top: 0.4rem;
