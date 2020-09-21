@@ -49,14 +49,16 @@ a{
     justify-content:flex-start;
 }
 .page_master{
-	position: absolute; 
+	position: absolute;
+	 display: flex;
+	justify-content: space-around; 
     width:1rem;
     height:1.48em;
     background: #DFDCD2;
     border-radius:.05rem;
     left: .8rem;
     top: .8rem;
-    display: flex;
+   
 }
 .page_master:before {
    content: "";
@@ -70,15 +72,18 @@ a{
 }
 .page_master a{
 	display: block;
+	margin-top: .2rem;
 	font-size: .14rem;
 	line-height: .28rem;
-	padding: .2rem .05rem 0 .1rem;
 	color: #333333;
-	width: .3rem;
+	width: .28rem;
+	writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
+    writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/ 
 }
 .page_lecture{
 	position: absolute; 
 	display: flex;
+	justify-content: space-around;
     width:1.3rem;
     height:1.48em;
     background: #DFDCD2;
@@ -99,11 +104,13 @@ a{
 }
 .page_lecture a{
 	display: block;
+	margin-top: .2rem;
 	font-size: .14rem;
 	line-height: .28rem;
 	width: .28rem;
-	padding: .2rem .05rem 0 .08rem;
 	color: #333333;
+	writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
+    writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/ 
 }
 .page_item a:nth-child(2){
     writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
@@ -134,11 +141,15 @@ a{
     font-size: .28rem;
     letter-spacing:.03rem;
     line-height: .32rem;
+    text-align: center;
 }
 .sizetwo{
     height:.68rem;
     font-size:.18rem;
+    margin-top:.05rem ;
+    margin-left: -.1rem;
     letter-spacing:1px;
+    text-align: left;
 }
 
 .borders{

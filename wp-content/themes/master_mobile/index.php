@@ -11,7 +11,7 @@
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>?t=v1.0.0" rel="stylesheet" />
 </head>
 <body>
-	<audio class="baradio" src="<?php echo esc_url( home_url( ) ); ?>/wp-content/uploads/2020/09/backradio.mp3" autoplay muted></audio>
+	<audio class="baradio" src="<?php echo esc_url( home_url( ) ); ?>/wp-content/uploads/2020/09/backradio.mp3" loop autoplay muted></audio>
     <div class="container">
      <ul>
         <li class="anxiang"><img src="<?php bloginfo('template_directory'); ?>/img/anxiang.png"></li>
