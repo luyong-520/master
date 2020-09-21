@@ -73,9 +73,6 @@ html{
     position: absolute;
     top: 0;
     left: .2rem;
-}
-.paging a:active .pagingred{
-    background-color:#D18324;
 } 
 
 /* 4 */

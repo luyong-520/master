@@ -156,12 +156,12 @@ video{
     margin: 0 8px;
     font-size: 12px;
     color: #41200A;
+    text-align: center;
 }
 
 #paging .active .pagingred {
     background-color:#D18324;
 }
-
 .arrowleft{
     border:none;
     background: none; 
@@ -178,11 +178,9 @@ video{
     background-color:#F1EEE3;
     border-radius:50%;
     position: absolute;
-    margin-left:12px;
+    margin-left:4px;
 }
-#paging a:active .pagingred{
-    background-color:#D18324;
-}
+
 
 /* six */
 .worksonep{

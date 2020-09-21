@@ -19,7 +19,7 @@
             <a href="<?php bloginfo('template_directory'); ?>/Master.php" class="sizeone">耕云师父</a>
             <a href="<?php bloginfo('template_directory'); ?>/Master.php" class="sizetwo">Master</a>
         </li>
-        <div  class="nav_master">
+        <div  class="page_master">
       			<a href="<?php bloginfo('template_directory'); ?>/Master.php">师父简介</a>
       			<a href="<?php bloginfo('template_directory'); ?>/MastersPicture.php">师父法相</a>
         </div>
@@ -29,7 +29,7 @@
             <a href="<?php bloginfo('template_directory'); ?>/Lecture.php" class="sizeone">法音讲词</a>
             <a href="<?php bloginfo('template_directory'); ?>/Lecture.php" class="sizetwo">Lecture</a>
          </li>
-         <div  class="nav_lecture">
+         <div  class="page_lecture">
       			<a href="<?php bloginfo('template_directory'); ?>/Lecture.php"  >师父讲词</a>
                 <a href="<?php bloginfo('template_directory'); ?>/Disabuse.php"  >师父解惑</a>
                 <a href="<?php bloginfo('template_directory'); ?>/BookNotes.php"   >耕云书笺</a>

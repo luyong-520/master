@@ -80,7 +80,7 @@
         vdo.play()
         vdo.muted = false;
     }, false);
-    window.onload = () => {
+    window.onload = function() {
               document.documentElement.style.overflow='hidden';
               var move=function(e){
                 e.preventDefault && e.preventDefault();
