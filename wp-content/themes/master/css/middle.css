@@ -181,7 +181,15 @@ video{
     margin-left:4px;
 }
 
-
+.has-text-align-center{
+    text-align: center;
+}
+.aligncenter{
+    text-align: center;
+}
+.has-text-align-right{
+    text-align: right;
+}
 /* six */
 .worksonep{
     font-size: 18px;

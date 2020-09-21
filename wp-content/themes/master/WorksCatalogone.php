@@ -17,7 +17,6 @@
     <title><?php echo $title ?>_安祥网站</title>
     <link href="css/public.css" rel="stylesheet" />
     <link href="css/middle.css" rel="stylesheet" />
-    <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 <body>
