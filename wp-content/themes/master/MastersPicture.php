@@ -39,14 +39,7 @@
             </div>
             
             <!-- paging    -->
-            <div id="paging" style="margin:0 auto;">
-                <button onclick="movepre('MastersPicture.php')"  class="arrowleft"><img src="./img/arrowleft.png"></button>
-                <!-- <a href="#" class="active"><button class="pagingred"></button>01</a> -->
-                <?php for($i=0;$i<$count;$i++) { ?>
-                <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>,"MastersPicture.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
-                <?php } ?>
-                <button onclick="movenex(<?php echo $count ?>,'MastersPicture.php')"  class="arrowleft"><img src="./img/arrowright.png"></button>
-            </div>
+            <?php include('showpagenation.php') ?>
         </main>
     </div>
     <!-- footer -->
@@ -54,9 +47,9 @@
 </body>
 <script src="https://cdn.bootcdn.net/ajax/libs/viewerjs/0.1.0/viewer.js"></script>
 <script src="js/js.js"></script>
+<script src="js/category.js"></script>
 <script >
-      var id = window.location.search?Number(window.location.search.split('=')[1]):1
-      activeClass () 
+      
 	  var viewer = new Viewer(document.getElementById('sucaihuo'), {
 			url: 'data-original',
             vviewed: function () {

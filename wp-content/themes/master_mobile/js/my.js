@@ -1,3 +1,4 @@
+
 // 获取分页的id
 function getId () {
     let id
@@ -11,6 +12,20 @@ function getId () {
         id = 1
     }
     return id
+}
+//获取总页数
+function getCount () {
+    let count
+    if (window.location.search.indexOf('&') > -1) {
+        window.location.search.split('&').forEach(val => {
+            if (val.indexOf('count') > -1) {
+                count = Number(val.split('=')[1])
+            };
+        });
+    } else {
+        count = 0
+    }
+    return count
 }
 // 获取分页时的title
 function getTitle () {
@@ -26,28 +41,34 @@ function getTitle () {
     }
     return title
 }
-// 页面初始化下面分页数字上面有圆点
-function activeClass (id) {
-    window.onload = function () {
-        var paging = document.getElementsByClassName('paging')[0];
-        var a = paging.getElementsByTagName("a");
-        a[id-1].classList.add("active");
-    }
-}
+
 // 点击数字跳转
-function go (id, url) {
-    window.location.href = `${url}?page=${Number(id) + 1}`
+function go (id, url,count) {
+    window.location.href = `${url}?page=${Number(id)}&count=${count}`
 }
-function godetaile (id, url) {
+function godetaile (id, url,count) {
     let title = getTitle()
-    window.location.href = `${url}?title=${title}&page=${Number(id) + 1}`
+    window.location.href = `${url}?title=${title}&page=${Number(id)}&count=${count}`
 }
 // 点击右箭头翻页
 function movenex (params, url) {
-    var id = window.location.search ? Number(window.location.search.split('=')[1]) : 1
+    var id,count
+	if (window.location.search.indexOf('&') > -1) {
+	window.location.search.split('&').forEach(val => {
+            if (val.indexOf('page') > -1) {
+                id = Number(val.split('=')[1])
+            };
+            if (val.indexOf('count') > -1) {
+                count = Number(val.split('=')[1])
+            };
+        });
+      }else{
+      	id = 1;
+      	count = 0
+      }  
     if (id < params) {
         id++
-        window.location.href = `${url}?page=${Number(id)}`
+        window.location.href = `${url}?page=${Number(id)}&count=${count}`
     } else {
         id = params
         return
@@ -55,10 +76,23 @@ function movenex (params, url) {
 }
 //  点击左箭头翻页
 function movepre (url) {
-    var id = window.location.search ? Number(window.location.search.split('=')[1]) : 1
+	var id,count
+	if (window.location.search.indexOf('&') > -1) {
+	window.location.search.split('&').forEach(val => {
+            if (val.indexOf('page') > -1) {
+                id = Number(val.split('=')[1])
+            };
+            if (val.indexOf('count') > -1) {
+                count = Number(val.split('=')[1])
+            };
+        });
+      }else{
+      	id = 1;
+      	count = 0
+      }  
     if (id > 1) {
         id--
-        window.location.href = `${url}?page=${Number(id)}`
+        window.location.href = `${url}?page=${Number(id)}&count=${count}`
     } else {
         id = 1
         return
@@ -168,4 +202,4 @@ function checkForm () {
         })
 
     }
-}
+}  

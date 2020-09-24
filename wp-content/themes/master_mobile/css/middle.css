@@ -44,14 +44,13 @@ html{
 }
 /* 分页 */
 /* paging */
-.paging{
-    text-align:center;
-    margin-top:-0.5rem ;
-}
-.paging a{
+
+.pagenation a{
+	display: inline-block;
+	width: .5rem;
+	position:relative;
     font-size:.24rem;
-    margin:.15rem;
-    position:relative;
+    text-align: center;
 }
 .arrowleft{
     border:none;
@@ -62,19 +61,17 @@ html{
     height:.14rem;
     line-height:0.18rem;
 }
-.paging .active .pagingred {
-    background-color:#D18324;
-}
+
 .pagingred{
-    width:.05rem;
-    height:.05rem;
-    background-color:#F1EEE3;
+	display: iinline-block;
+    width:.08rem;
+    height:.08rem;
+    background-color:#D18324;
     border-radius:50%;
     position: absolute;
     top: 0;
-    left: .15rem;
-} 
-
+    left: .36rem;
+}
 /* 4 */
 .weitu{
     position: absolute;
@@ -204,7 +201,7 @@ html{
     margin-top:.58rem;
 }
 .marginTopTF{
-    margin-top:0.51rem;
+    margin-top:0.08rem;
 }
 /* 12 */
 .videos{

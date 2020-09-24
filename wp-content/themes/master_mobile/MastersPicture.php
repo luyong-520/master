@@ -34,16 +34,7 @@
 			<canvas id="canvas"></canvas>
 		</div>
     <!-- 分页    -->
-    <div class="paging marginTopFO">
-        <button onclick="movepre('MastersPicture.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
-        <?php for($i=0;$i<$count;$i++) { ?>
-         <a href="javascript:void(0)" onclick='go(<?php echo $i ?>,"MastersPicture.php")' >
-         	<button class="pagingred"></button>
-         	<?php echo $i+1; ?>
-         </a>
-         <?php } ?>
-        <button onclick="movenex(<?php echo $count ?>,'MastersPicture.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
-    </div>
+    <?php include('showpagenation.php') ?>
     </main>
 </div>
 
@@ -52,10 +43,8 @@
 <!--<script src="https://cdn.bootcdn.net/ajax/libs/viewerjs/0.1.0/viewer.js"></script>-->
 <script src="js/show.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="js/my.js"></script>
+<script type="text/javascript" src="js/category.js"></script>
 <script>
-	var sid = window.location.search?Number(window.location.search.split('=')[1]):1
-	activeClass(sid)
-    
       //使用方法
 			var wxScale=new WxScale({
 				fullPage:document.querySelector("#fullPage"),

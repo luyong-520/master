@@ -26,21 +26,13 @@ function getTitle () {
     }
     return title
 }
-// 页面初始化下面分页数字上面有圆点
-function activeClass () {
-    window.onload = function () {
-        var paging = document.getElementById('paging');
-        var a = paging.getElementsByTagName("a");
-        a[id - 1].classList.add("active");
-    }
-}
 // 点击数字跳转
 function go (id, url) {
-    window.location.href = `${url}?page=${Number(id) + 1}`
+    window.location.href = `${url}?&page=${Number(id)}`
 }
 function godetaile (id, url) {
     let title = getTitle()
-    window.location.href = `${url}?title=${title}&page=${Number(id) + 1}`
+    window.location.href = `${url}?title=${title}&page=${Number(id)}`
 }
 // 点击右箭头翻页
 function movenex (params, url) {

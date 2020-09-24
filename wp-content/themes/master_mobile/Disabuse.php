@@ -41,22 +41,13 @@
           <a class="displayBlock" href="<?php echo 'DisabusedeDatile.php?title='.$value['post_title']; ?>">阅读全文</a>
         </div>
         <?php } ?>
-        	
-        <div class="paging marginTopFO">
-            <button onclick="movepre('Disabuse.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
-           <?php for($i=0;$i<$count;$i++) { ?>
-	        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>,"Disabuse.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
-	        <?php } ?>
-            <button onclick="movenex(<?php echo $count ?>,'Disabuse.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
-        </div>
+        	<!--分页-->
+       <?php include('showpagenation.php') ?>
     </main>
     </nav>
 
     <?php include('footer.php') ?>
 </body>
 <script type="text/javascript" src="js/my.js"></script>
-<script>
-	var sid = window.location.search?Number(window.location.search.split('=')[1]):1
-	activeClass(sid) 
-  </script>
+<script type="text/javascript" src="js/category.js"></script>
 </html>

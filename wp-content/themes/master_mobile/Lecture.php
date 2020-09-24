@@ -31,7 +31,7 @@
 </head>
 <body>
 	<?php include('header.php') ?>
-    <nav class="container">
+    <div class="container">
     <main>
     	  <?php foreach ($rows as $key => $value) {?>
         <div class="lecturecontent">
@@ -41,22 +41,13 @@
           <a class="displayBlock" href="<?php echo 'Answer.php?title='.$value['post_title']; ?>">阅读全文</a>
         </div>
         <?php } ?>
-        	
-        <div class="paging marginTopFO">
-            <button onclick="movepre('Lecture.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
-           <?php for($i=0;$i<$count;$i++) { ?>
-	        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>,"Lecture.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
-	        <?php } ?>
-            <button onclick="movenex(<?php echo $count ?>,'Lecture.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
-        </div>
+        
     </main>
-    </nav>
-
+    <?php include('showpagenation.php') ?>
+    </div>
+    
     <?php include('footer.php') ?>
 </body>
 <script type="text/javascript" src="js/my.js"></script>
-<script>
-	var sid = window.location.search?Number(window.location.search.split('=')[1]):1
-	activeClass(sid) 
-  </script>
+<script type="text/javascript" src="js/category.js"></script>
 </html>

@@ -44,25 +44,12 @@
         <?php } ?>
         </main>
         <!-- 分页    -->
-       <div id="paging" style="margin-top:42px;">
-        <button onclick="movepre('BookNotes.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
-        <?php for($i=0;$i<$count;$i++) { ?>
-        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>,"BookNotes.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
-        <?php } ?>
-        <button onclick="movenex(<?php echo $count ?>,'BookNotes.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
-      </div>
+        <?php include('showpagenation.php') ?>
         </div>
 
      <!-- 底部 -->
      <?php get_footer();?>
     <script src="./js/js.js"></script>
-    <script>
-        var id = window.location.search?Number(window.location.search.split('=')[1]):1
-        activeClass()
-    //   function go(id) {
-    //     window.location.href=`BookNotes.php?page=${Number(id)+1}`
-    //   }
-     
-  </script>
+    <script src="js/category.js"></script>
 </body>
 </html>

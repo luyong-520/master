@@ -29,7 +29,7 @@
 </head>
 <body>
 	<?php include("header.php"); ?>
-	<nav class="container">
+	<div class="container">
       <main >
       <?php foreach ($rows as $key => $value) {?>
         
@@ -41,22 +41,14 @@
         </div>
         <?php } ?>
         </main>
+         <!-- 分页    -->
+      <?php include('showpagenation.php') ?>
         </nav>
-        <!-- 分页    -->
-       <div class="paging marginTopFO">
-            <button onclick="movepre('BookNotes.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
-           <?php for($i=0;$i<$count;$i++) { ?>
-	        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>,"BookNotes.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
-	        <?php } ?>
-            <button onclick="movenex(<?php echo $count ?>,'BookNotes.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
-        </div>
+       
      <!-- 底部 -->
      <?php get_footer();?>
 
 </body>
    <script type="text/javascript" src="js/my.js"></script>
-<script>
-	var sid = window.location.search?Number(window.location.search.split('=')[1]):1
-	activeClass(sid) 
-  </script>
+   <script type="text/javascript" src="js/category.js"></script>
 </html>

@@ -49,13 +49,7 @@
       
 
        <!-- 分页    -->
-       <div id="paging" style="margin:42px auto;">
-        <button onclick="detailePre('DisabusedeDatile.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
-        <?php for($i=0;$i<$count;$i++) { ?>
-        <a href="javascript:void(0)"  onclick='godetaile(<?php echo $i ?>,"DisabusedeDatile.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
-        <?php } ?>
-        <button onclick="detaileNex(<?php echo $count ?>,'DisabusedeDatile.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
-    </div>
+       <?php include('detailepage.php') ?>  
           
       </main>
     </div>
@@ -65,8 +59,5 @@
     
 </body>
 <script src="js/js.js"></script>
-<script>
-      let id = getId()
-      activeClass()
-  </script>
+<script type="text/javascript" src="js/detaile.js"></script>
 </html>

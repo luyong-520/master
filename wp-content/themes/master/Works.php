@@ -45,12 +45,7 @@ $count = ceil($num/$pageSize);
       </main>
 
        <!-- 分页    -->
-       <div id="paging" style="margin-top:42px;">
-        <button onclick="movepre('Works.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
-        <?php for($i=0;$i<$count;$i++) { ?>
-        <a href="javascript:void(0)"  onclick='go(<?php echo $i ?>,"Works.php")' ><button class="pagingred"></button><?php echo $i+1; ?></a>
-        <?php } ?>
-        <button onclick="movenex(<?php echo $count ?>,'Works.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
+        <?php include('showpagenation.php') ?>
     </div>
     </div>
 
@@ -59,9 +54,5 @@ $count = ceil($num/$pageSize);
     
 </body>
 <script src="./js/js.js"></script>
-    <script>
-      var id = window.location.search?Number(window.location.search.split('=')[1]):1
-      activeClass() 
-  
-  </script>
+<script src="js/category.js"></script>
 </html>

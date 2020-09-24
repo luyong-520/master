@@ -41,21 +41,12 @@ $count = ceil($num/$pageSize);
           <a class="displayBlock" href=<?php echo "WorksCatalogone.php?page=0&&count=".$value['catnum']."&title=".$value['post_title'] ?> >阅读全文</a>
         </div>
          <?php }  ?>
-        <div class="paging marginTopFO">
-            <button onclick="movepre('Work.php')" class="arrowleft"><img src="./img/arrowleft.png"></button>
-            <?php for($i=0;$i<$count;$i++) { ?>
-            <a href="#"  onclick='go(<?php echo $i ?>,"Work.php")'><button class="pagingred"></button><?php echo $i+1; ?></a>
-           <?php } ?>
-            <button onclick="movenex(<?php echo $count ?>,'Work.php')" class="arrowleft"><img src="./img/arrowright.png"></button>
-        </div>
+        <?php include('showpagenation.php') ?>
     </main>
 </div>
 
    <?php include('footer.php') ?>
 </body>
 <script type="text/javascript" src="js/my.js"></script>
-<script>
-	 var sid = window.location.search?Number(window.location.search.split('=')[1]):1
-     activeClass(sid)
-  </script>
+<script type="text/javascript" src="js/category.js"></script>
 </html>
