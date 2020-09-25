@@ -17,8 +17,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>师父法相_安祥网站</title>
-    <link href="./css/public.css" rel="stylesheet" />
-    <link href="./css/middle.css" rel="stylesheet" />
+    <link href="./css/public.css?t=1545545" rel="stylesheet" />
+    <link href="./css/middle.css?t=1545545" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="./css/viewer.min.css" /> -->
     <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/0.1.0/viewer.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">

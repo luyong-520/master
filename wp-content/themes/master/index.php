@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>安祥网站</title>
     <script src="<?php bloginfo('template_directory'); ?>/js/rem.js"></script>
-    <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" />
+    <link href="<?php bloginfo( 'stylesheet_url' ); ?>?t=v1.0.0" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
 </head>
 <audio class="baradio" src="<?php echo esc_url( home_url( ) );?>/wp-content/uploads/2020/09/backradio.mp3" loop autoplay muted></audio>

@@ -10,8 +10,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>讲法视频_安祥网站</title>
-    <link href="./css/public.css" rel="stylesheet" />
-    <link href="./css/middle.css" rel="stylesheet" />
+    <link href="./css/public.css?t=1545545" rel="stylesheet" />
+    <link href="./css/middle.css?t=1545545" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 <body>
