@@ -26,8 +26,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <title>师父解惑_安祥网站</title>
-    <link href="./css/header.css" rel="stylesheet" />
-    <link href="./css/middle.css" rel="stylesheet" />
+    <link href="./css/header.css?t=1545545" rel="stylesheet" />
+    <link href="./css/middle.css?t=1545545" rel="stylesheet" />
 </head>
 <body>
 	<?php include('header.php') ?>

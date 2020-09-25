@@ -48,17 +48,20 @@ a{
     display: flex;
     justify-content:flex-start;
 }
-.page_master{
+.master_parent{
 	position: absolute;
-	 display: flex;
+	display: none;
+    left: .8rem;
+    top: .8rem;
+    z-index: 99;
+}
+.page_master{
+	display: flex;
 	justify-content: space-around; 
     width:1rem;
     height:1.48em;
-    background: #DFDCD2;
     border-radius:.05rem;
-    left: .8rem;
-    top: .8rem;
-   
+    background: #DFDCD2; 
 }
 .page_master:before {
    content: "";
@@ -80,17 +83,20 @@ a{
 	writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
     writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/ 
 }
+.leture_parent{
+	position: absolute;
+	display: none;
+	left: .8rem;
+    top: .8rem;
+    z-index: 99;
+}
 .page_lecture{
-	position: absolute; 
 	display: flex;
 	justify-content: space-around;
     width:1.3rem;
     height:1.48em;
     background: #DFDCD2;
-    border-radius:.05rem;
-    left: .8rem;
-    top: .8rem;
-   
+    border-radius:.05rem; 
 }
 .page_lecture:before {
    content: "";

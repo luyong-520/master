@@ -20,24 +20,30 @@
      <div class="menu menu-one">
      <ul >
         <li class="page_item page-item-2">
-            <a href="<?php bloginfo('template_directory'); ?>/Master.php" class="sizeone">耕云师父</a>
-            <a href="<?php bloginfo('template_directory'); ?>/Master.php" class="sizetwo">Master</a>
+            <a href="javascript:void(0)" class="sizeone">耕云师父</a>
+            <a href="javascript:void(0)" class="sizetwo">Master</a>
         </li>
-        <div  class="page_master">
-      			<a href="<?php bloginfo('template_directory'); ?>/Master.php">师父简介</a>
-      			<a href="<?php bloginfo('template_directory'); ?>/MastersPicture.php">师父法相</a>
+        <div class="master_parent">
+	        <div  class="page_master">
+	      			<a href="<?php bloginfo('template_directory'); ?>/Master.php">师父简介</a>
+	      			<a href="<?php bloginfo('template_directory'); ?>/MastersPicture.php">师父法相</a>
+	        </div>	
         </div>
+        
      </ul>
      <ul >
         <li class="page_item page-item-2">
-            <a href="<?php bloginfo('template_directory'); ?>/Lecture.php" class="sizeone">法音讲词</a>
-            <a href="<?php bloginfo('template_directory'); ?>/Lecture.php" class="sizetwo">Lecture</a>
+            <a href="javascript:void(0)" class="sizeone">法音讲词</a>
+            <a href="javascript:void(0)" class="sizetwo">Lecture</a>
          </li>
-         <div  class="page_lecture">
+         <div class="leture_parent">
+         	<div  class="page_lecture">
       			<a href="<?php bloginfo('template_directory'); ?>/Lecture.php"  >师父讲词</a>
                 <a href="<?php bloginfo('template_directory'); ?>/Disabuse.php"  >师父解惑</a>
                 <a href="<?php bloginfo('template_directory'); ?>/BookNotes.php"   >耕云书笺</a>
-        </div>
+            </div>
+         </div>
+         
      </ul>
      <ul style="margin-left: .1rem;">
         <li class="page_item page-item-2">
@@ -93,5 +99,13 @@
         vdo.play();
         vdo.muted = false;
     }, false);
+    $('.page_item').eq(0).click(function(){
+    	$('.master_parent').css({'display':'block'})
+    	$('.leture_parent').css({'display':'none'})
+    })
+    $('.page_item').eq(1).click(function(){
+    	$('.leture_parent').css({'display':'block'})
+    	$('.master_parent').css({'display':'none'})
+    })
 </script>
 </html>
