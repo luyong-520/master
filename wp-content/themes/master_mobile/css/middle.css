@@ -380,3 +380,11 @@ html{
 	height: .15rem;
 	transform: rotate(-90deg);
 }
+.pcshow{
+    display: none;
+}
+.mobileshow{
+    display: block;
+    font-weight: bold;
+    margin-top: .24rem!important;
+}

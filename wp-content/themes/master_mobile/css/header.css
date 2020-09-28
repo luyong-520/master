@@ -179,20 +179,28 @@ body{
 /* footer */
 .footers{
     width:100%;
-    height:79px;
+    height:1.6rem;
     border-top:1px solid #D0B696;
-    margin-top:25px;
+    margin-top:.5rem;
 }
 .footers p{
-    font-size: 12px;
+    font-size: .24rem;
     text-align: center;
-    line-height: 12px;
+    line-height: .24rem;
 }
 .footerone{
-    margin-top:22px;
+    margin-top:.44rem;
 }
 .footertwo{
-    margin-top:12.5px;
+    margin-top:.25rem;
+}
+.footer_count{
+    display: inline-block;
+    margin:.25rem;
+    font-size: .24rem;
+}
+.footer_count:nth-child(2){
+	margin-left: .2rem;
 }
 a{
     color: #41200A;

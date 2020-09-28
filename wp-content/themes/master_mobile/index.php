@@ -93,7 +93,7 @@
 </body>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js" ></script>
 <script type="text/javascript">
-	 console.log('version=v1.0.0')
+	 console.log(navigator.userAgent)
 	 document.body.addEventListener('touchend', function(){
         var vdo = $("audio")[0]; //jquery
         vdo.play();

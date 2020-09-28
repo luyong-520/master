@@ -1,5 +1,5 @@
 <?php
-   $page=(int)$_GET['page'];
+   $page=isset($_GET['page']) ? (int)$_GET['page']: 0;
    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-config.php' );
    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-includes/wp-db.php' );
    $title = isset($_GET['title'])?$_GET['title']:'爱的人生';
@@ -34,6 +34,7 @@
 
         <div class="workstwochapter">
         	<p ><a href="Work.php">返回上一级</a></p>
+        	<p onclick='goback()'  >返回目录</p>
             <p onclick='pre()'  >上一章</p>
             <p onclick='next()' id="next" >下一章</a>
         </div> 
@@ -44,10 +45,10 @@
     <?php include('gotop.php') ?>	
 </body>
 <script>
-      function pre() {
-        let page = 0
-        let title 
-          window.location.search.split('&').forEach(val => {
+	  let page = 0
+      let title 
+      let count = 0
+	  window.location.search.split('&').forEach(val => {
               if(val.indexOf('page')>-1){
                 page = val.split('=')[1]
               };
@@ -57,7 +58,8 @@
               if(val.indexOf('title')>-1){
                 title = val.split('=')[1]
               };
-          });
+          }); 
+      function pre() {
            if(page <= 0){
            }else{
             page--
@@ -65,26 +67,15 @@
            };  
       }
       function next(params) {
-        let page = 0
-        let count = 0
-        let title 
-          window.location.search.split('&').forEach(val => {
-              if(val.indexOf('page')>-1){
-                page = val.split('=')[1]
-              };
-              if(val.indexOf('count')>-1){
-                count = Number(val.split('=')[1])
-              };
-              if(val.indexOf('title')>-1){
-                title = val.split('=')[1]
-              };
-          });
            if(page >= count-1){
             document.getElementById('next').innerHTML='最后一章'
            }else{
             page++
             window.location.href=`WorksCatalogone.php?page=${page}&&count=${count}&title=${title}`
            };  
+      }
+      function goback(){
+      	window.location.href = `WorksCatalogone.php?page=0&count=${count}&title=${title}`
       }
   </script>
 </html>

@@ -169,6 +169,10 @@ body{
     color: #41200A;
     line-height: 24px;   
 }
-
-                                                                             
+.footer_count{
+    display: inline-block;
+}
+.footer_count:nth-child(2){
+    margin-left: 15px;
+}                                                                             
 

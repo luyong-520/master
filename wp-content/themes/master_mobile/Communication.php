@@ -11,10 +11,22 @@
 	 <?php include("header.php"); ?>
     <div class="container">
     <main class="main">
-         <p class="contact"><img src="./img/tel.png" class="tel"><span class="hiddens">010-83210000</span></p>
-         <p class="contact"><img src="./img/youxiang.png" class="mailbox"><span class="hiddens">gengyun120@qq.com</span></p>
-         <p class="contact"><img src="./img/qq.png" class="qq"><span class="hiddens">12345678</span></p>
-         <p class="contact"><img src="./img/dingwei.png" class="location"><span class="hiddens">xxx市xxx区xxx大道xxx街xxx号</span></p>
+         <p class="contact">
+         	<img src="./img/tel.png" class="tel">
+         		<span class="hiddens">13429888989</span>
+         </p>
+         <p class="contact">
+         	<img src="./img/youxiang.png" class="mailbox">
+         		<span class="hiddens">3463763044@qq.com</span>
+         </p>
+         <p class="contact">
+         	<img src="./img/qq.png" class="qq">
+         		<span class="hiddens">3463763044</span>
+         </p>
+         <p class="contact">
+         	<img src="./img/dingwei.png" class="location">
+         		<span class="hiddens">湖北省武汉市东西湖区</span>
+         </p>
          <ul>
           <li class="form">姓名</li>
           <li><input type="text" id="name" class="fname inputs"></li>

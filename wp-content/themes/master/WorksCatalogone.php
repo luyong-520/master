@@ -1,5 +1,5 @@
 <?php
-   $page=(int)$_GET['page'];
+   $page=isset($_GET['page']) ? (int)$_GET['page']: 0;
    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-config.php' );
    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-includes/wp-db.php' );
    $title = isset($_GET['title'])?$_GET['title']:'爱的人生';
@@ -21,6 +21,7 @@
 </head>
 <body>
     <div id="container">
+    
     <?php include("header.php"); ?>
       <!-- 中间的表 -->
       <main id="workstwo">
@@ -33,6 +34,7 @@
 
            <div id="workstwochapter">
                <a  href="Works.php">返回上一级</a>
+               <a  href="javascript:void(0)" onclick='goback("WorksCatalogone.php")'>返回目录</a>
                <a onclick='workpre()' href="javascript:void(0)">上一章</a>
                <a id="next" onclick='worknext()' href="javascript:void(0)" style="margin-left:5%; width: 45%;">下一章</a>
            </div>

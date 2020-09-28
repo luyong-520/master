@@ -12,6 +12,20 @@ function getId () {
     }
     return id
 }
+// 获取分页的count
+function getCount () {
+    let id
+    if (window.location.search.indexOf('&') > -1) {
+        window.location.search.split('&').forEach(val => {
+            if (val.indexOf('count') > -1) {
+                id = Number(val.split('=')[1])
+            };
+        });
+    } else {
+        id = 0
+    }
+    return id
+}
 // 获取分页时的title
 function getTitle () {
     let title
@@ -55,6 +69,12 @@ function movepre (url) {
         id = 1
         return
     }
+}
+// 返回目录
+function goback (url) {
+    let title = getTitle()
+    let count = getCount()
+    window.location.href = `${url}?page=0&count=${count}&title=${title}`
 }
 // 师父著作 上一页
 function workpre () {

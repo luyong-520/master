@@ -279,6 +279,9 @@ video{
 #workstwochapter a:nth-child(2){
     margin-left: 42px;
 }
+#workstwochapter a:nth-child(3){
+    margin-left: 42px;
+}
 /* eight */
 #lectureone button{
     width:24px;
@@ -520,3 +523,10 @@ video{
   #submit {
     background-color: #D18324; width: 92px; height: 30px; line-height: 20px; color: #fff; margin-left: 85px; margin-top: 20px;
   }
+.pcshow{
+    display: block;
+    font-weight: bold;
+}
+.mobileshow{
+    display: none;
+}
