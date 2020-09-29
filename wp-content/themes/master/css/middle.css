@@ -460,7 +460,8 @@ video{
     font-size: 14px;
     color: #41200A;
     text-align: center;
-    line-height: 24px;  
+    height: 28px;
+    line-height: 28px;  
 }
 /* 16在线交流 */
 #home{

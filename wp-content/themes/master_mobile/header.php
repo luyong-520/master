@@ -46,7 +46,7 @@
       <ul >
       	<li>
       		<div class="actbg"></div>
-      		<a class="nav_b" href="http://gengyun.yc384.com">
+      		<a class="nav_b" href="http://anxiangchan.org.cn">
       			<p>网站首页</p>
       			<p>Home</p>
       		</a>
