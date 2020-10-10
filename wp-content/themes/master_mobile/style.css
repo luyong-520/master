@@ -76,12 +76,10 @@ a{
 .page_master a{
 	display: block;
 	margin-top: .2rem;
-	font-size: .18rem;
+	font-size: .24rem;
 	line-height: .28rem;
 	color: #333333;
 	width: .28rem;
-	writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
-    writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/ 
 }
 .leture_parent{
 	position: absolute;
@@ -111,12 +109,10 @@ a{
 .page_lecture a{
 	display: block;
 	margin-top: .2rem;
-	font-size: .18rem;
+	font-size: .24rem;
 	line-height: .28rem;
 	width: .28rem;
 	color: #333333;
-	writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
-    writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/ 
 }
 .page_item a:nth-child(2){
     writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  

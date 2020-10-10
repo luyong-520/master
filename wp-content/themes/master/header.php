@@ -51,8 +51,8 @@
 
         <div id="dropdown">
         <div class="dropbtn">
-          <a href="http://gengyun.yc384.com" class="dropdownone">网站首页</a>
-          <a href="http://gengyun.yc384.com" class="dropdowntwo">Home</a>
+          <a href="http://anxiangchan.org.cn" class="dropdownone">网站首页</a>
+          <a href="http://anxiangchan.org.cn" class="dropdowntwo">Home</a>
         </div>
         </div>
         

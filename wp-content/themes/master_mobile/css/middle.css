@@ -332,7 +332,7 @@ html{
 .submit{
 	width: 1.6rem;
 	height: 0.6rem;
-	margin-top: .2rem;
+	margin-top: .3rem;
 	line-height: .6rem;
 	text-align: center;
     font-size: 0.28rem;
@@ -341,8 +341,8 @@ html{
     
 }
 .study{
-	font-size: .24rem;
-	text-align: center;
+	font-size: .26rem;
+	text-align: left;
 }
     	/*放大图片样式*/
 #fullPage{
