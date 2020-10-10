@@ -23,7 +23,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>耕云书笺_安祥网站</title>
+    <title>耕云书笺_安祥禅网站</title>
     <link href="./css/public.css?t=1545545" rel="stylesheet" />
     <link href="./css/middle.css?t=1545545" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">

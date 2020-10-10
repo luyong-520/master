@@ -95,7 +95,7 @@
     }
     $('.navbar .nav_b').eq(id).css({'color':'#D18324'}).siblings().css({'color':'#ffffff'});
     $('.navbar .actbg').eq(id).show()
-    //耕耘师父导航点击事件
+    //耕耘导师导航点击事件
     if(id==1){
     	$('.nav_content').css({'display':'block'})
     	if(bindex == -1){

@@ -16,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>师父法相_安祥网站</title>
+    <title>导师法相_安祥禅网站</title>
     <link href="./css/public.css?t=1545545" rel="stylesheet" />
     <link href="./css/middle.css?t=1545545" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="./css/viewer.min.css" /> -->

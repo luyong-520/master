@@ -194,14 +194,6 @@ body{
 .footertwo{
     margin-top:.25rem;
 }
-.footer_count{
-    display: inline-block;
-    margin:.25rem 0 .25rem 0;
-    font-size: .24rem;
-}
-.footer_count:nth-child(2){
-	margin-left: .08rem;
-}
 a{
     color: #41200A;
     -webkit-tap-highlight-color: rgba(0,0,0,0);

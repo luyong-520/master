@@ -98,7 +98,7 @@ function movepre (url) {
         return
     }
 }
-// 师父著作 上一页
+// 导师著作 上一页
 function workpre () {
     let page = 0
     let title
@@ -119,7 +119,7 @@ function workpre () {
         window.location.href = `WorksCatalogone.php?page=${page}&&count=${count}&title=${title}`
     };
 }
-//   师父著作下一页
+//   导师著作下一页
 function worknext () {
     let page = 0
     let count = 0

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安祥网站</title>
+    <title>安祥禅网站</title>
     <script src="<?php bloginfo('template_directory'); ?>/js/rem.js"></script>
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>?t=v1.0.0" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
@@ -17,18 +17,18 @@
     
     <div class="homePagetitle">
         <ul class="pageone" style="margin-left:20px;">
-            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php">耕云师父</a></li>
+            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php">耕云导师</a></li>
             <li class="floatRight clearfix"><a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php">Master</a></li>
             <div class="first_pic ">
              <img src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
              <div class="nav">
-                <a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php" style="margin-left:20px" class="navone">师父简介</a>
-                <a href="<?php bloginfo('template_directory'); ?>/MastersPicture.php" >师父法相</a>
+                <a href="<?php bloginfo('template_directory'); ?>/AboutMaster.php" style="margin-left:20px" class="navone">导师简介</a>
+                <a href="<?php bloginfo('template_directory'); ?>/MastersPicture.php" >导师法相</a>
             </div>
             </div>
         </ul>
          <ul class="pageone">
-            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/Works.php">师父著作</a></li>
+            <li class="floatLeft clearfix"><a href="<?php bloginfo('template_directory'); ?>/Works.php">导师著作</a></li>
             <li class="floatRight clearfix"><a href="<?php bloginfo('template_directory'); ?>/Works.php">Works</a></li>
             <div class="sec_pic dno">
              <img src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
@@ -40,8 +40,8 @@
             <div class="first_pic dno">
              <img style="margin-left:2px;" src="<?php bloginfo('template_directory'); ?>/img/navbg.png">
              <div class="nav">
-                <a href="<?php bloginfo('template_directory'); ?>/Lecture.php"  >师父讲词</a>
-                <a href="<?php bloginfo('template_directory'); ?>/Disabuse.php"  >师父解惑</a>
+                <a href="<?php bloginfo('template_directory'); ?>/Lecture.php"  >导师讲词</a>
+                <a href="<?php bloginfo('template_directory'); ?>/Disabuse.php"  >导师解惑</a>
                 <a href="<?php bloginfo('template_directory'); ?>/BookNotes.php"   >耕云书笺</a>
             </div>
             </div>

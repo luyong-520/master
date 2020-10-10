@@ -7,7 +7,7 @@
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-control" content="no-cache">
 	<meta http-equiv="Cache" content="no-cache">
-    <title>安祥网站</title>
+    <title>安祥禅网站</title>
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>?t=v1.0.0" rel="stylesheet" />
 </head>
 <body>
@@ -20,13 +20,13 @@
      <div class="menu menu-one">
      <ul >
         <li class="page_item page-item-2">
-            <a href="javascript:void(0)" class="sizeone">耕云师父</a>
+            <a href="javascript:void(0)" class="sizeone">耕云导师</a>
             <a href="javascript:void(0)" class="sizetwo">Master</a>
         </li>
         <div class="master_parent">
 	        <div  class="page_master">
-	      			<a href="<?php bloginfo('template_directory'); ?>/Master.php">师父简介</a>
-	      			<a href="<?php bloginfo('template_directory'); ?>/MastersPicture.php">师父法相</a>
+	      			<a href="<?php bloginfo('template_directory'); ?>/Master.php">导师简介</a>
+	      			<a href="<?php bloginfo('template_directory'); ?>/MastersPicture.php">导师法相</a>
 	        </div>	
         </div>
         
@@ -38,8 +38,8 @@
          </li>
          <div class="leture_parent">
          	<div  class="page_lecture">
-      			<a href="<?php bloginfo('template_directory'); ?>/Lecture.php"  >师父讲词</a>
-                <a href="<?php bloginfo('template_directory'); ?>/Disabuse.php"  >师父解惑</a>
+      			<a href="<?php bloginfo('template_directory'); ?>/Lecture.php"  >导师讲词</a>
+                <a href="<?php bloginfo('template_directory'); ?>/Disabuse.php"  >导师解惑</a>
                 <a href="<?php bloginfo('template_directory'); ?>/BookNotes.php"   >耕云书笺</a>
             </div>
          </div>
@@ -72,7 +72,7 @@
      <div class="menu menu-two">
         <ul>
            <li class="page_item page-item-2">
-            <a href="<?php bloginfo('template_directory'); ?>/Work.php" class="sizeone">师父著作</a>
+            <a href="<?php bloginfo('template_directory'); ?>/Work.php" class="sizeone">导师著作</a>
             <a href="<?php bloginfo('template_directory'); ?>/Work.php" class="sizetwo">Work</a>
            </li>
         </ul>

@@ -75,6 +75,7 @@ video{
 .flex-item img{
     width:320px;
     height:180px;
+    object-fit: cover;
 }
 .flex-item p{
     color: #41200A;
@@ -522,8 +523,19 @@ video{
     margin-top: 20px;
   }
   #submit {
-    background-color: #D18324; width: 92px; height: 30px; line-height: 20px; color: #fff; margin-left: 85px; margin-top: 20px;
+    background-color: #D18324;
+    width: 92px;
+    height: 30px;
+    line-height: 20px;
+    color: #fff;
+    margin-left: 85px;
+    margin-top: 5px;
   }
+ .study{
+     font-size: 16px;
+     margin-top: 5px;
+     margin-left: 85px;
+ }
 .pcshow{
     display: block;
     font-weight: bold;

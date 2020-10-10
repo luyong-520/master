@@ -3,23 +3,23 @@
   $arr=explode("/", $url);
   $last=$arr[count($arr)-1];
    if($last=='Master.php'){
-    $word = '师父简介';
+    $word = '导师简介';
 	$laststr = 'Master';   
    }
    if($last=='MastersPicture.php'){
-    $word = '师父法相';
+    $word = '导师法相';
     $laststr = 'Master’s Picture';
    }
    if($last=='Work.php'||$last=='WorksCatalogone.php'){
-    $word = '师父著作';
+    $word = '导师著作';
     $laststr = 'Works';
    }
    if($last=='Lecture.php'||$last=='Answer.php'){
-    $word = '师父讲词';
+    $word = '导师讲词';
     $laststr = 'Lecture';
    }
    if($last=='Disabuse.php'||$last=='DisabusedeDatile.php'){
-    $word = '师父解惑';
+    $word = '导师解惑';
     $laststr = 'Dispel doubt';
    }
    if($last=='BookNotes.php'||$last=='BookNotesone.php'){
@@ -46,7 +46,7 @@
       <ul >
       	<li>
       		<div class="actbg"></div>
-      		<a class="nav_b" href="http://anxiangchan.org.cn">
+      		<a class="nav_b" href="http://gengyun.yc384.com">
       			<p>网站首页</p>
       			<p>Home</p>
       		</a>
@@ -54,18 +54,18 @@
       	<li >
       		<div class="actbg"></div>
       		<a class="nav_b" href="Master.php">
-      			<p >耕云师父</p>
+      			<p >耕云导师</p>
       			<p>Master</p>
       		</a>
       		<div  class="nav_content">
-      			<a href="Master.php">师父简介</a>
-      			<a href="MastersPicture.php">师父法相</a>
+      			<a href="Master.php">导师简介</a>
+      			<a href="MastersPicture.php">导师法相</a>
       		</div>
       	</li>
       	<li>
       		<div class="actbg"></div>
       		<a class="nav_b" href="Work.php">
-      			<p>师父著作</p>
+      			<p>导师著作</p>
       			<p>Works</p>
       		</a>
       		
@@ -77,8 +77,8 @@
       			<p>Lecture</p>
       		</a>
       		<div class="lecture_content">
-      			<a href="Lecture.php">师父讲词</a>
-      			<a href="Disabuse.php">师父解惑</a>
+      			<a href="Lecture.php">导师讲词</a>
+      			<a href="Disabuse.php">导师解惑</a>
       			<a href="BookNotes.php">耕云书笺</a>
       		</div>
       	</li>

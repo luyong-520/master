@@ -28,12 +28,13 @@ html{
 
 /* 3 */
 .teacherphoto{
-	width: 100%;
-	height: 4.59rem;
+    height: 4.59rem;
+    width: 100%;
 }
 .teacherphoto img{
     width:100%;
-    height:3.48rem;
+    max-height:3.48rem; 
+    object-fit: cover;
 }
 .fontSizeThree p{
     font-size:.32rem;
@@ -338,6 +339,10 @@ html{
     color: #FFFFFF;
     background: #D18324;
     
+}
+.study{
+	font-size: .24rem;
+	text-align: center;
 }
     	/*放大图片样式*/
 #fullPage{

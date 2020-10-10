@@ -25,7 +25,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-    <title>师父讲词_安祥网站</title>
+    <title>导师讲词_安祥禅网站</title>
     <link href="./css/header.css?t=1545545" rel="stylesheet" />
     <link href="./css/middle.css?t=1545545" rel="stylesheet" />
 </head>

@@ -3,23 +3,23 @@
   $arr=explode("/", $url);
   $last=$arr[count($arr)-1];
    if($last=='AboutMaster.php'){
-    $word = '师父简介';
+    $word = '导师简介';
     $laststr = 'About Master';
    }
    if($last=='MastersPicture.php'){
-    $word = '师父法相';
+    $word = '导师法相';
     $laststr = 'Master’s Picture';
    }
    if($last=='Works.php'||$last=='WorksCatalogone.php'){
-    $word = '师父著作';
+    $word = '导师著作';
     $laststr = 'Works';
    }
    if($last=='Lecture.php'||$last=='Answer.php'){
-    $word = '师父讲词';
+    $word = '导师讲词';
     $laststr = 'Lecture';
    }
    if($last=='Disabuse.php'||$last=='DisabusedeDatile.php'){
-    $word = '师父解惑';
+    $word = '导师解惑';
     $laststr = 'Dispel Doubt';
    }
    if($last=='BookNotes.php'||$last=='BookNotesone.php'){
@@ -51,29 +51,29 @@
 
         <div id="dropdown">
         <div class="dropbtn">
-          <a href="http://anxiangchan.org.cn/" class="dropdownone">网站首页</a>
-          <a href="http://anxiangchan.org.cn/" class="dropdowntwo">Home</a>
+          <a href="http://gengyun.yc384.com" class="dropdownone">网站首页</a>
+          <a href="http://gengyun.yc384.com" class="dropdowntwo">Home</a>
         </div>
         </div>
         
         <div id="dropdown" style="width:32px">
         <div class="dropbtn">
-          <a href="./AboutMaster.php" class="dropdownone">耕云师父</a>
+          <a href="./AboutMaster.php" class="dropdownone">耕云导师</a>
           <a href="./AboutMaster.php" class="dropdowntwo">Master</a>
         </div>
 
         <button class="sjx"></button>
         <div class="dropdown-content" style="width:50px;">
           <div class="dcbtn">
-            <a href="./AboutMaster.php" class="dcbtnone"><span class="dot"></span>师父简介</a>
-            <a href="./MastersPicture.php" class="dcbtnone"><span class="dot"></span>师父法相</a>
+            <a href="./AboutMaster.php" class="dcbtnone"><span class="dot"></span>导师简介</a>
+            <a href="./MastersPicture.php" class="dcbtnone"><span class="dot"></span>导师法相</a>
           </div>
         </div>
         </div>
         
         <div id="dropdown">
          <div class="dropbtn">
-          <a href="./Works.php" class="dropdownone">师父著作</a>
+          <a href="./Works.php" class="dropdownone">导师著作</a>
           <a href="./Works.php" class="dropdowntwo">Works</a>
         </div>
         </div>
@@ -87,8 +87,8 @@
         <button class="sjx"></button>
         <div class="dropdown-content" style="width:72px;">
           <div class="dcbtn">
-            <a href="./Lecture.php" class="dcbtnone"><span class="dot"></span>师父讲词</a>
-            <a href="./Disabuse.php" class="dcbtnone"><span class="dot"></span>师父解惑</a>
+            <a href="./Lecture.php" class="dcbtnone"><span class="dot"></span>导师讲词</a>
+            <a href="./Disabuse.php" class="dcbtnone"><span class="dot"></span>导师解惑</a>
             <a href="./BookNotes.php" class="dcbtnone"><span class="dot"></span>耕云书笺</a>
           </div>
         </div>
