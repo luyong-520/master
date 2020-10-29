@@ -49,4 +49,6 @@ $count = ceil($num/$pageSize);
 </body>
 <script type="text/javascript" src="js/my.js"></script>
 <script type="text/javascript" src="js/category.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+<script type="text/javascript" src="js/header.js"></script> 
 </html>

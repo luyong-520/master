@@ -46,5 +46,7 @@
 </body>
 <script src="js/layer.js"></script>
 <script src="js/my.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+<script type="text/javascript" src="js/header.js"></script> 
 </html>
 

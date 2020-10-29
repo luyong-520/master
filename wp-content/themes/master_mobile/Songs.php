@@ -51,71 +51,8 @@
 
     <?php include("footer.php"); ?>
 </body>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+<script type="text/javascript" src="js/header.js"></script> 
 </html>
   
-    <!-- <main class="workstwo">
-        <p>《禅曲目录》</p>
-        <div class="songs">
-          <ul class="song">
-            <b class="displayBlock hiddens">一、耕云导师作词或作曲</b>
-            <li class="music hiddens displayBlock"><a href="ZenMusic.html">安祥歌 ……………………………………………<span>【禅曲】</span><a></li>
-            <li class="music hiddens displayBlock"><a href="#">自性歌 …………………………………………………………</a></li>
-            <li class="music hiddens displayBlock"><a href="#">山居好 ……………………………………………………………………………<span>【禅曲】</span></a></li>
-            <li class="music hiddens displayBlock"><a href="#">自性的礼赞 …………………………………<span>【禅曲】</span></a></li>
-            <li class="music hiddens displayBlock"><a href="#">安祥天使 ………………………...............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">本来面目 ……………………………………………………………………</a></li>
-            <li class="music hiddens displayBlock"><a href="#">本心妄心 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">安祥天使之歌 ……………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">归 ………………………………………………<span>【禅曲】</span></a></li>
-            <li class="music hiddens displayBlock"><a href="#">修心诀 ……………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">杜　漏 …………………………………………<span>【禅曲】</span></a></li>
-            <li class="music hiddens displayBlock"><a href="#">叮　咛 ……………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">安祥之歌 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">自觉自知 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">不二歌 ……………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">幸福的泉源 ………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">禅者的画像 ………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">法　语〈桶底脱落〉 …………………………<span>【禅曲】</span></a></li>
-            <li class="music hiddens displayBlock"><a href="#">契　约 …………………………………............................…</a></li>
-
-            <b class="displayBlock hiddens">二、经典摘句或古德诗偈</b>
-            <li class="music hiddens displayBlock"><a href="#">般若波罗蜜多心经 ………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">牧牛图颂 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">证道歌 ……………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">常见自己过 ………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">心境如如 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">信心铭 ……………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">牧牛图颂 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">逆耳忠言 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">入道四行 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">三宝歌 ……………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">身佛无殊 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">守本真心 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">问答偈 ……………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">无心法 ……………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">五更转 ……………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">心地法门 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">快乐无忧 …………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">心　颂 ……………………………………............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">庐山组曲………………………………….............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">性海灵光………………………………….............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">修福修道………………………………….............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">选佛场…………………………………….............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">阳明箴言…………………………………..............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">因果歌…………………………………….............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">应无所住………………………………….............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">淤泥生红莲……………………………….............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">证道行…………………………………….............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">直心是道…………………………………............................</a></li>
-
-            <b class="displayBlock hiddens">三、安祥禅友作词</b>
-            <li class="music hiddens displayBlock"><a href="#">漏尽歌…………………………………….............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">路…………………………………………...............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">心　路…………………………………….............................</a></li>
-            <li class="music hiddens displayBlock"><a href="#">修行颂…………………………………….............................</a></li>
-    
-          </ul>
-        
-        </div> 
-      </main> -->
    
